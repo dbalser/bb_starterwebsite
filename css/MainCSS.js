@@ -8,7 +8,12 @@ export default () => (
         width: 100%;
 				margin: 0 auto;
       }
-			
+
+			div {
+				padding:0;
+				margin:0;
+			}
+
     `}</style>
   </div>
 )

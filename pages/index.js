@@ -1,25 +1,35 @@
 import Link from 'next/link'
 import Nav from '../comp/Nav'
+import MainView from '../comp/MainView'
 import MainCSS from '../css/MainCSS'
+import ColorsCSS from '../css/ColorsCSS'
 
-const index = () => {
 
-	return (
+class index extends React.Component {
 
-		<div id = "wrapper">
-			<MainCSS/>
-			<Nav/>
+	constructor(props) {
+		super(props)
+		this.state = {
 
-			Hello World
+		}
+	}
 
-			{' '}
+	async componentDidMount () {}
 
-			<Link href="/aboutUs">
-	      <a>See About us</a>
-	    </Link>
+	render() {
+		return (
 
-		</div>
-	)
+			<div id = "wrapper">
+
+				<Nav/>
+				<MainView/>
+
+				<MainCSS/>
+				<ColorsCSS/>
+
+			</div>
+		)
+	}
 }
 
 

@@ -12,9 +12,13 @@ const Nav = () => {
 
 	      nav {
 					width: 100%;
+					// position:fixed;
+					padding:1%;
 	      }
 
-				
+				h2 {
+					margin:0;
+				}
 
     	`}</style>
 		</nav>
