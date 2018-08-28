@@ -1,6 +1,9 @@
 import Link from 'next/link'
 import Nav from '../comp/Nav'
 import MainView from '../comp/MainView'
+import ShowCase from '../comp/ShowCase'
+import AboutUs from '../comp/AboutUs'
+import Socials from '../comp/Socials'
 import MainCSS from '../css/MainCSS'
 import ColorsCSS from '../css/ColorsCSS'
 
@@ -23,6 +26,9 @@ class index extends React.Component {
 
 				<Nav/>
 				<MainView/>
+				<ShowCase/>
+				<AboutUs/>
+				<Socials/>
 
 				<MainCSS/>
 				<ColorsCSS/>

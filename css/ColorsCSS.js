@@ -1,6 +1,6 @@
 import React from 'react'
 
-// #FF5400 #47434C #39363D #CCCCCC #FFFFFF
+// #FF5400 #56515C #39363D #CCCCCC #FFFFFF
 
 export default () => (
   <div>
@@ -11,10 +11,22 @@ export default () => (
 			}
 
 			#MainView {
-				background: #47434C;
+				background: #56515C;
 			}
 			#mainText p {
 				color: #CCCCCC;
+			}
+
+			#ShowCase {
+				background: #56515C;
+			}
+
+			#AboutUS {
+				background: #FFFFFF;
+			}
+
+			#Socials {
+				background: #39363D;
 			}
 
     `}</style>
