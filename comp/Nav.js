@@ -11,12 +11,12 @@ const Nav = () => {
 			<style jsx>{`
 
 	      nav {
-					width: 100%;
-					// position:fixed;
+					width: 98%;
 					padding:1%;
 	      }
 
 				h2 {
+					min-width: 100%;
 					margin:0;
 				}
 

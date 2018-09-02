@@ -9,10 +9,12 @@ export default () => (
 				margin: 0 auto;
       }
 
-			div {
+			* {
 				padding:0;
-				margin:0;
+				margin:0 auto;
 			}
+
+
 
     `}</style>
   </div>
