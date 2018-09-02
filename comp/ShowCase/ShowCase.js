@@ -16,10 +16,6 @@ class ShowCase extends React.Component {
 					pic: '/static/img/dog2.jpeg',
 					desc: "Like nothing shady ever happened in a fully furnished office? You ever hear about Wall Street Morty? You know what those guys do in their fancy board"
 				},{
-					title: "Im a cute doggo",
-					pic: '/static/img/dog2.jpeg',
-					desc: "Like nothing shady ever happened in a fully furnished office? You ever hear about Wall Street Morty? You know what those guys do in their fancy board"
-				},{
 						title: "dog3",
 						pic: '/static/img/dog3.jpg',
 						desc: "but not just put it in my mouth and let it slide down my throat, but really eat it! Remote override engaged. No! Yes. Bypassing override! I am aliiiiiveeeeee… Hello."
@@ -42,10 +38,10 @@ class ShowCase extends React.Component {
 
 					#ShowCase {
 						width:100%;
-						height: 300px;
+						height: 80vh;
 					}
 					#EmptySpace {
-						width:5%;
+						width:9%;
 						display: inline-block;
 					}
 		    `}</style>

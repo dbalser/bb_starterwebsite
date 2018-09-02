@@ -15,15 +15,15 @@ export default ({DisplayItem}) => {
 			<style jsx >{`
 
 				#DisplayPiece {
-					width:20%;
-					height: 270px;
+					width:25%;
+					height: 75vh;
 					display: inline-block;
 					margin: 1%;
 					border:solid red;
 				}
 				#DisplayPic {
 					width: 100%;
-					height: 220px;
+					height: 65vh;
 					overflow: hidden;
 					background-position: center;
 					background-size: cover;
@@ -34,7 +34,7 @@ export default ({DisplayItem}) => {
 					font-size: 2vw;
 				}
 
-				
+
 
 				@-webkit-keyframes hvr-wobble-vertical {
 				  16.65% {
