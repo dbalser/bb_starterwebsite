@@ -19,7 +19,11 @@ export default ({DisplayItem}) => {
 					height: 75vh;
 					display: inline-block;
 					margin: 1%;
-					border:solid red;
+					border-radius: 25px;
+
+					-webkit-box-shadow: 7px 15px 61px -6px rgba(57,54,61,1);
+					-moz-box-shadow: 7px 15px 61px -6px rgba(57,54,61,1);
+					box-shadow: 7px 15px 61px -6px rgba(57,54,61,1);
 				}
 				#DisplayPic {
 					width: 100%;

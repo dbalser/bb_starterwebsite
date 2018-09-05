@@ -18,7 +18,7 @@ export default () => (
 			}
 
 			#ShowCase {
-				background: #56515C;
+				background: #CCCCCC;
 			}
 
 			#AboutUS {
@@ -27,6 +27,10 @@ export default () => (
 
 			#Socials {
 				background: #39363D;
+			}
+
+			#DisplayPiece {
+				background: #56515C;
 			}
 
     `}</style>
