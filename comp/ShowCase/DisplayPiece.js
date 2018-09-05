@@ -1,10 +1,10 @@
 import React from 'react'
 
 
-export default ({DisplayItem}) => {
+export default ({DisplayItem, ChangeCurrentView}) => {
 
 	return (
-		<div id = "DisplayPiece" className = "hvr-wobble-vertical">
+		<div id = "DisplayPiece" className = "hvr-wobble-vertical" onClick = {() => ChangeCurrentView(true)}>
 
 			<div id = "DisplayPic" style = {{backgroundImage: 'url(' + DisplayItem.pic + ')'}}></div>
 
@@ -20,7 +20,6 @@ export default ({DisplayItem}) => {
 					display: inline-block;
 					margin: 1%;
 					border-radius: 25px;
-
 					-webkit-box-shadow: 7px 15px 61px -6px rgba(57,54,61,1);
 					-moz-box-shadow: 7px 15px 61px -6px rgba(57,54,61,1);
 					box-shadow: 7px 15px 61px -6px rgba(57,54,61,1);

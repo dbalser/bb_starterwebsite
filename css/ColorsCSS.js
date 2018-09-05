@@ -33,6 +33,10 @@ export default () => (
 				background: #56515C;
 			}
 
+			#DisplayInfo {
+				background: #39363D
+			}
+
     `}</style>
   </div>
 )
