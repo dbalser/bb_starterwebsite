@@ -34,6 +34,7 @@ export default () => (
 			}
 
 			#DisplayInfo {
+				color: #CCCCCC;
 				background: #39363D
 			}
 

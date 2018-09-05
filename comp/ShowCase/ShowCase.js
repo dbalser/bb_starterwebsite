@@ -23,23 +23,22 @@ class ShowCase extends React.Component {
 						desc: "but not just put it in my mouth and let it slide down my throat, but really eat it! Remote override engaged. No! Yes. Bypassing override! I am aliiiiiveeeeee… Hello."
 				}],
 			CurrentDisplay: false,
-			SelectedInfo: null
+			SelectedInfo: null,
+			AnimeName: null
 		}
 	}
 
-	ChangeCurrentView (bool) {
+	ChangeCurrentView (bool, SelectedInfo) {
+
 		if(bool) {
 			this.setState({
-				SelectedInfo: {
-						title: "dog3",
-						pic: '/static/img/dog3.jpg',
-						desc: "but not just put it in my mouth and let it slide down my throat, but really eat it! Remote override engaged. No! Yes. Bypassing override! I am aliiiiiveeeeee… Hello."
-				}
+				SelectedInfo: {...SelectedInfo},
+				AnimeName: "show"
 			})
 		}
 		else {
 			this.setState({
-				SelectedInfo: null
+				AnimeName: "hide"
 			})
 		}
 	}
@@ -50,11 +49,14 @@ class ShowCase extends React.Component {
 
 				<div id = "EmptySpace"></div>
 
-				{this.state.SelectedInfo !== null ? <DisplayInfo  SelectedInfo = {this.state.SelectedInfo}/> : null}
+				{this.state.SelectedInfo  ? <DisplayInfo  SelectedInfo = {this.state.SelectedInfo}
+				AnimeName = {this.state.AnimeName}
+				ChangeCurrentView = {this.ChangeCurrentView.bind(this)}
+				/> : null}
 
 				{this.state.Info.map((DisplayItem, i) => {
 
-					if(this.state.SelectedInfo) {
+					if(this.state.AnimeName === "show") {
 						return null
 					}
 
@@ -70,6 +72,7 @@ class ShowCase extends React.Component {
 					#ShowCase {
 						width:100%;
 						height: 80vh;
+						position: relative;
 					}
 
 					#EmptySpace {
