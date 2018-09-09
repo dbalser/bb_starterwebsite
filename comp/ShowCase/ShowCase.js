@@ -37,24 +37,27 @@ class ShowCase extends React.Component {
 					desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
 				},{
 
-					title: "Hot Damn",
+					title: "bob",
 					pic: '/static/img/dog1.jpg',
 					desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
 				},{
-					title: "Dogs are cool",
+					title: "Project",
 					pic: '/static/img/dog2.jpeg',
+					desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
+				},{
+					title: "Dino",
+					pic: '/static/img/dog3.jpg',
 					desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
 				}],
 			CurrentDisplay: false,
 			SelectedInfo: null,
 			AnimeName: null,
-			PiecesBottomNum: 0
+			PiecesBottomNum: 0,
+			PiecesMaxBool: 'at min'
 		}
 	}
 
 	ChangeCurrentView(bool, SelectedInfo) {
-
-		console.log('hit');
 
 		if(bool) {
 			this.setState({
@@ -73,35 +76,48 @@ class ShowCase extends React.Component {
 
 		let max = 0
 		let PiecesBottomNum = this.state.PiecesBottomNum
-		let movesUp = 90.3
+		let movesUp = 89.1
 
-		this.state.Info.forEach((data, i) => {
-			let index = i + 1
-			if(index > 3) {
+		let NumOfInfo = this.state.Info.length
+		// this acts like .ceiling its the remander is not 0
+		NumOfInfo % 3 === 0 ? null : NumOfInfo += (3 - (NumOfInfo % 3))
+		//this caculates max
+		for (let i = 1; i <= NumOfInfo; i++) {
+			if(i > 3) {
 				max += (movesUp / 3)
 			}
-		})
+		}
 
 		//handle going above and bellow max
 		if(PiecesBottomNum >= max && bool ) {
-			console.log('error', PiecesBottomNum, max);
+			console.log('look 1', PiecesBottomNum, max);
+			this.setState({
+				PiecesMaxBool: 'at max'
+			})
 			return
 		}
 		else if (PiecesBottomNum <= 0 && !bool){
-			console.log('hit', PiecesBottomNum, max);
+			console.log('look 2', PiecesBottomNum, max);
+			this.setState({
+				PiecesMaxBool: 'at min'
+			})
 			return
 		}
 
 		//move pieces up
 		if(bool) {
+			console.log('look 3', PiecesBottomNum + movesUp, max);
 			this.setState({
-				PiecesBottomNum: PiecesBottomNum += movesUp
+				PiecesBottomNum: PiecesBottomNum += movesUp,
+				PiecesMaxBool: 'in middle'
 			})
 		}
 		//move pieces up
 		else {
+			console.log('look 4', PiecesBottomNum - movesUp, max);
 			this.setState({
-				PiecesBottomNum: this.state.PiecesBottomNum -= movesUp
+				PiecesBottomNum: this.state.PiecesBottomNum -= movesUp,
+				PiecesMaxBool: 'in middle'
 			})
 		}
 	}
@@ -115,16 +131,17 @@ class ShowCase extends React.Component {
 			 	AnimeName = {this.state.AnimeName}
 			 	ChangeCurrentView = {this.ChangeCurrentView.bind(this)} />
 
-				<img
-					id = "UpArrow"
-					src = {UpArrow}
-					alt="Smiley face"
-					onClick = {() => this.ChangePiecesShown(true)}/>
-				<img
-					id = "DownArrow"
-					src = {DownArrow}
-					alt="Smiley face"
-					onClick = {() => this.ChangePiecesShown(false)}/>
+					<img
+						id = "UpArrow"
+						src = {UpArrow}
+						alt="Smiley face"
+						onClick = {() => this.ChangePiecesShown(true)}/>
+
+					<img
+						id = "DownArrow"
+						src = {DownArrow}
+						alt="Smiley face"
+						onClick = {() => this.ChangePiecesShown(false)}/>
 
 				<div id = "AllPieces">
 					{this.state.Info.map((DisplayItem, i) => {
@@ -150,7 +167,7 @@ class ShowCase extends React.Component {
 						height: 88vh;
 						display: inline-block;
 						position: relative;
-						bottom: 110vh;
+						bottom: 108vh;
 						left: 8%;
 						overflow: hidden;
 					}
@@ -160,6 +177,7 @@ class ShowCase extends React.Component {
 						position: relative;
 						bottom: 75vh;
 						left: 83vw;
+						visibility: ${this.state.PiecesMaxBool !== "at max" ? "visible" : "hidden"}
 					}
 					#DownArrow {
 						width: 15%;
@@ -167,6 +185,7 @@ class ShowCase extends React.Component {
 						position: relative;
 						bottom: 40vh;
 						left: 68.2vw;
+						visibility: ${this.state.PiecesMaxBool !== "at min" ? "visible" : "hidden"}
 					}
 		    `}</style>
 
