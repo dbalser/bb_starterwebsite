@@ -106,18 +106,18 @@ class ShowCase extends React.Component {
 
 		//move pieces up
 		if(bool) {
-			console.log('look 3', PiecesBottomNum + movesUp, max);
+			console.log('look 3', (PiecesBottomNum + movesUp), max, PiecesBottomNum);
 			this.setState({
-				PiecesBottomNum: PiecesBottomNum += movesUp,
-				PiecesMaxBool: 'in middle'
+				PiecesMaxBool: (PiecesBottomNum + movesUp) >= max ? 'at max' : 'in middle',
+				PiecesBottomNum: PiecesBottomNum += movesUp
 			})
 		}
 		//move pieces up
 		else {
-			console.log('look 4', PiecesBottomNum - movesUp, max);
+			console.log('look 4', (PiecesBottomNum + movesUp) >= max, max, PiecesBottomNum);
 			this.setState({
-				PiecesBottomNum: this.state.PiecesBottomNum -= movesUp,
-				PiecesMaxBool: 'in middle'
+				PiecesMaxBool: (PiecesBottomNum - movesUp) <= 0 ? 'at min' : 'in middle',
+				PiecesBottomNum: this.state.PiecesBottomNum -= movesUp
 			})
 		}
 	}
