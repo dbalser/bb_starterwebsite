@@ -1,10 +1,10 @@
 import React from 'react'
 
 
-export default ({DisplayItem, ChangeCurrentView}) => {
+export default ({DisplayItem, AnimeName, ChangeCurrentView}) => {
 
 	return (
-		<div id = "DisplayPiece" className = "hvr-wobble-vertical" onClick = {() => ChangeCurrentView(true, DisplayItem)}>
+		<div id = "DisplayPiece" className = "hvr-wobble-vertical {AnimeName}" onClick = {() => ChangeCurrentView(true, DisplayItem)}>
 
 			<div id = "DisplayPic" style = {{backgroundImage: 'url(' + DisplayItem.pic + ')'}}></div>
 
@@ -19,7 +19,8 @@ export default ({DisplayItem, ChangeCurrentView}) => {
 					height: 75vh;
 					display: inline-block;
 					position: relative;
-					z-index:1;
+					bottom: 80vh;
+					left: 10vw;
 					margin: 1%;
 					border-radius: 25px;
 					-webkit-box-shadow: 7px 15px 61px -6px rgba(57,54,61,1);
@@ -39,7 +40,10 @@ export default ({DisplayItem, ChangeCurrentView}) => {
 					font-size: 2vw;
 				}
 
+				.show {
 
+
+				}
 
 				@-webkit-keyframes hvr-wobble-vertical {
 				  16.65% {

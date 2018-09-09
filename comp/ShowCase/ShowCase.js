@@ -28,7 +28,9 @@ class ShowCase extends React.Component {
 		}
 	}
 
-	ChangeCurrentView (bool, SelectedInfo) {
+	ChangeCurrentView(bool, SelectedInfo) {
+
+		console.log('hit');
 
 		if(bool) {
 			this.setState({
@@ -47,21 +49,16 @@ class ShowCase extends React.Component {
 		return (
 			<div id = 'ShowCase'>
 
-				<div id = "EmptySpace"></div>
 
-				{this.state.SelectedInfo  ? <DisplayInfo  SelectedInfo = {this.state.SelectedInfo}
-				AnimeName = {this.state.AnimeName}
-				ChangeCurrentView = {this.ChangeCurrentView.bind(this)}
-				/> : null}
+				<DisplayInfo  SelectedInfo = {this.state.SelectedInfo}
+			 	AnimeName = {this.state.AnimeName}
+			 	ChangeCurrentView = {this.ChangeCurrentView.bind(this)} />
 
 				{this.state.Info.map((DisplayItem, i) => {
 
-					if(this.state.AnimeName === "show") {
-						return null
-					}
-
 					return (<DisplayPiece key = {i}
 						DisplayItem = {DisplayItem}
+						AnimeName = {this.state.AnimeName}
 						ChangeCurrentView = {this.ChangeCurrentView.bind(this)}
 						/>)
 					})
@@ -74,11 +71,6 @@ class ShowCase extends React.Component {
 						height: 80vh;
 						position: relative;
 					}
-
-					#EmptySpace {
-						width:9%;
-						display: inline-block;
-					}
 		    `}</style>
 
 			</div>
@@ -86,4 +78,12 @@ class ShowCase extends React.Component {
 	}
 }
 
+
+//	if(this.state.AnimeName === "show") {
+	// 	return null
+	// }
+// {this.state.SelectedInfo && this.state.AnimeName === "show"  ? <DisplayInfo  SelectedInfo = {this.state.SelectedInfo}
+// AnimeName = {this.state.AnimeName}
+// ChangeCurrentView = {this.ChangeCurrentView.bind(this)}
+// /> : null}
 export default ShowCase

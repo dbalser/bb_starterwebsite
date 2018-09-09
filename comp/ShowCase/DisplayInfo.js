@@ -6,9 +6,9 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 		return (
 			<div id = "DisplayInfo" className = {AnimeName} onClick = {() => ChangeCurrentView(false)}>
 
-				<h1>{SelectedInfo.title}</h1>
+				<h1>{SelectedInfo ? SelectedInfo.title : ""}</h1>
 
-				<p>{SelectedInfo.desc}</p>
+				<p>{SelectedInfo ? SelectedInfo.desc : ""}</p>
 
 				<style jsx >{`
 
@@ -18,7 +18,7 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 					}
 					@keyframes hide{
 					    0%{right: 0vw;}
-							100% { top: -1000vh;}
+							100% { right: 100vw;}
 					}
 
 					#DisplayInfo {
@@ -26,8 +26,8 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 						height: 80vh;
 						display: inline-block;
 						position: relative;
-						z-index:5;
-						top:-4%;
+						right: 100vw;
+						z-index: 5;
 					}
 
 					.show {
@@ -39,7 +39,6 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 					}
 
 					.hide {
-						right: 0vw;
 						-webkit-animation: hide 0.5s forwards;
 					  -moz-animation: hide 0.5s forwards;
 					  -o-animation: hide 0.5s forwards;
