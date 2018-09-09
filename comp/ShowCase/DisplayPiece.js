@@ -14,6 +14,12 @@ export default ({DisplayItem, AnimeName, ChangeCurrentView}) => {
 
 			<style jsx >{`
 
+				.show {
+					-webkit-box-shadow: none !important;
+					-moz-box-shadow: none !important;
+					box-shadow: none !important;
+				}
+
 				#DisplayPiece {
 					width:25%;
 					height: 75vh;
@@ -38,10 +44,6 @@ export default ({DisplayItem, AnimeName, ChangeCurrentView}) => {
 					margin:5%;
 					text-align: left;
 					font-size: 2vw;
-				}
-
-				.show {
-					visibility: hidden;
 				}
 
 				@-webkit-keyframes hvr-wobble-vertical {
