@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-export default ({DisplayItem, AnimeName, ChangeCurrentView}) => {
+export default ({DisplayItem, PiecesBottomNum, AnimeName, ChangeCurrentView}) => {
 
 	return (
 		<div id = "DisplayPiece" className = {"hvr-wobble-vertical "  + AnimeName} onClick = {() => ChangeCurrentView(true, DisplayItem)}>
@@ -25,9 +25,10 @@ export default ({DisplayItem, AnimeName, ChangeCurrentView}) => {
 					height: 75vh;
 					display: inline-block;
 					position: relative;
-					bottom: 80vh;
-					left: 10vw;
+					bottom: ${PiecesBottomNum}vh;
+					left: 8vw;
 					margin: 1%;
+					margin-bottom: 8%;
 					border-radius: 25px;
 					-webkit-box-shadow: 7px 15px 61px -6px rgba(57,54,61,1);
 					-moz-box-shadow: 7px 15px 61px -6px rgba(57,54,61,1);
