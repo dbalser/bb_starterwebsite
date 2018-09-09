@@ -69,7 +69,6 @@ class ShowCase extends React.Component {
 					#ShowCase {
 						width:100%;
 						height: 80vh;
-						position: relative;
 					}
 		    `}</style>
 

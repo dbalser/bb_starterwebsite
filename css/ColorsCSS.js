@@ -3,11 +3,14 @@ import React from 'react'
 // #FF5400 #56515C #39363D #CCCCCC #FFFFFF
 
 export default () => (
-  <div>
+  <div >
     <style jsx global>{`
 
 			nav {
-				background: #CCCCCC;
+				background: #39363D;
+			}
+			nav h2 {
+				color: #CCCCCC;
 			}
 
 			#MainView {

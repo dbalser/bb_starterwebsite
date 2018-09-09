@@ -14,6 +14,7 @@ export default () => {
 				#Socials {
 					width:100%;
 					height: 100px;
+					margin:0;
 				}
 
 	    `}</style>

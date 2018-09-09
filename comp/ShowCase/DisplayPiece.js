@@ -4,7 +4,7 @@ import React from 'react'
 export default ({DisplayItem, AnimeName, ChangeCurrentView}) => {
 
 	return (
-		<div id = "DisplayPiece" className = "hvr-wobble-vertical {AnimeName}" onClick = {() => ChangeCurrentView(true, DisplayItem)}>
+		<div id = "DisplayPiece" className = {"hvr-wobble-vertical "  + AnimeName} onClick = {() => ChangeCurrentView(true, DisplayItem)}>
 
 			<div id = "DisplayPic" style = {{backgroundImage: 'url(' + DisplayItem.pic + ')'}}></div>
 
@@ -41,8 +41,7 @@ export default ({DisplayItem, AnimeName, ChangeCurrentView}) => {
 				}
 
 				.show {
-
-
+					visibility: hidden;
 				}
 
 				@-webkit-keyframes hvr-wobble-vertical {

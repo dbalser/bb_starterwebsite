@@ -18,7 +18,7 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 					}
 					@keyframes hide{
 					    0%{right: 0vw;}
-							100% { right: 100vw;}
+							100% {right: 100vw;}
 					}
 
 					#DisplayInfo {

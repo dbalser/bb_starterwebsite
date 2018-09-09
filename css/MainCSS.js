@@ -1,11 +1,12 @@
 import React from 'react'
 
 export default () => (
-  <div>
+  <div >
     <style jsx global>{`
 
-      body {
+      body, #wrapper {
         width: 100%;
+				min-height: 100%;
 				margin: 0 auto;
       }
 
@@ -14,7 +15,7 @@ export default () => (
 				margin:0 auto;
 			}
 
-		
+
 
     `}</style>
   </div>

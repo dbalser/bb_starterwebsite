@@ -6,7 +6,7 @@ const Nav = () => {
 	return (
 		<nav>
 
-			<h2>Logo</h2>
+			<h2>Full Stack Developer in action!</h2>
 
 			<style jsx>{`
 

@@ -2,4 +2,5 @@
 body {
 	position: relative;
 	display: none;
+	visibility: hidden;
 }
