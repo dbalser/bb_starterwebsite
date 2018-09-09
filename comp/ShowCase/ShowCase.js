@@ -44,23 +44,6 @@ class ShowCase extends React.Component {
 					title: "Dogs are cool",
 					pic: '/static/img/dog2.jpeg',
 					desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
-				},{
-					title: "Number B",
-					pic: '/static/img/dog3.jpg',
-					desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
-				},{
-
-					title: "Hats",
-					pic: '/static/img/dog1.jpg',
-					desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
-				},{
-					title: "Snakes",
-					pic: '/static/img/dog2.jpeg',
-					desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
-				},{
-					title: "Dino",
-					pic: '/static/img/dog3.jpg',
-					desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
 				}],
 			CurrentDisplay: false,
 			SelectedInfo: null,
@@ -93,14 +76,14 @@ class ShowCase extends React.Component {
 		let movesUp = 90.3
 
 		this.state.Info.forEach((data, i) => {
-			i += 1
-			if( i > 3 && i % 3 === 0) {
-				max += movesUp
+			let index = i + 1
+			if(index > 3) {
+				max += (movesUp / 3)
 			}
 		})
 
 		//handle going above and bellow max
-		if(PiecesBottomNum === max && bool ) {
+		if(PiecesBottomNum >= max && bool ) {
 			console.log('error', PiecesBottomNum, max);
 			return
 		}
