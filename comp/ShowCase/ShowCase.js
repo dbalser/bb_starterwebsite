@@ -11,6 +11,7 @@ class ShowCase extends React.Component {
 		super(props)
 		this.state = {
 			Info:  [{
+
 					title: "Project Number A",
 					pic: '/static/img/dog1.jpg',
 					desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
@@ -22,33 +23,7 @@ class ShowCase extends React.Component {
 					title: "Project Number B",
 					pic: '/static/img/dog3.jpg',
 					desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
-				},{
-
-					title: "Project Number bob",
-					pic: '/static/img/dog1.jpg',
-					desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
-				},{
-					title: "Project Number H",
-					pic: '/static/img/dog2.jpeg',
-					desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
-				},{
-					title: "Project Number Dino",
-					pic: '/static/img/dog3.jpg',
-					desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
-				},{
-
-					title: "bob",
-					pic: '/static/img/dog1.jpg',
-					desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
-				},{
-					title: "Project",
-					pic: '/static/img/dog2.jpeg',
-					desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
-				},{
-					title: "Dino",
-					pic: '/static/img/dog3.jpg',
-					desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
-				}],
+				}, ],
 			CurrentDisplay: false,
 			SelectedInfo: null,
 			AnimeName: null,
@@ -90,14 +65,12 @@ class ShowCase extends React.Component {
 
 		//handle going above and bellow max
 		if(PiecesBottomNum >= max && bool ) {
-			console.log('look 1', PiecesBottomNum, max);
 			this.setState({
 				PiecesMaxBool: 'at max'
 			})
 			return
 		}
 		else if (PiecesBottomNum <= 0 && !bool){
-			console.log('look 2', PiecesBottomNum, max);
 			this.setState({
 				PiecesMaxBool: 'at min'
 			})
@@ -106,17 +79,15 @@ class ShowCase extends React.Component {
 
 		//move pieces up
 		if(bool) {
-			console.log('look 3', (PiecesBottomNum + movesUp), max, PiecesBottomNum);
 			this.setState({
-				PiecesMaxBool: (PiecesBottomNum + movesUp) >= max ? 'at max' : 'in middle',
+				PiecesMaxBool: (PiecesBottomNum + movesUp) >= max ? 'at max' : 'in middle', // this looks ahead and decides
 				PiecesBottomNum: PiecesBottomNum += movesUp
 			})
 		}
 		//move pieces up
 		else {
-			console.log('look 4', (PiecesBottomNum + movesUp) >= max, max, PiecesBottomNum);
 			this.setState({
-				PiecesMaxBool: (PiecesBottomNum - movesUp) <= 0 ? 'at min' : 'in middle',
+				PiecesMaxBool: (PiecesBottomNum - movesUp) <= 0 ? 'at min' : 'in middle', // this looks ahead and decides
 				PiecesBottomNum: this.state.PiecesBottomNum -= movesUp
 			})
 		}
@@ -131,17 +102,17 @@ class ShowCase extends React.Component {
 			 	AnimeName = {this.state.AnimeName}
 			 	ChangeCurrentView = {this.ChangeCurrentView.bind(this)} />
 
-					<img
-						id = "UpArrow"
-						src = {UpArrow}
-						alt="Smiley face"
-						onClick = {() => this.ChangePiecesShown(true)}/>
+				<img
+					id = "UpArrow"
+					src = {UpArrow}
+					alt="Smiley face"
+					onClick = {() => this.ChangePiecesShown(true)}/>
 
-					<img
-						id = "DownArrow"
-						src = {DownArrow}
-						alt="Smiley face"
-						onClick = {() => this.ChangePiecesShown(false)}/>
+				<img
+					id = "DownArrow"
+					src = {DownArrow}
+					alt="Smiley face"
+					onClick = {() => this.ChangePiecesShown(false)}/>
 
 				<div id = "AllPieces">
 					{this.state.Info.map((DisplayItem, i) => {
@@ -177,7 +148,7 @@ class ShowCase extends React.Component {
 						position: relative;
 						bottom: 75vh;
 						left: 83vw;
-						visibility: ${this.state.PiecesMaxBool !== "at max" ? "visible" : "hidden"}
+						visibility: ${this.state.PiecesMaxBool === "at max" || this.state.Info.length === 3 ? "hidden" : "visible"}
 					}
 					#DownArrow {
 						width: 15%;
@@ -185,7 +156,7 @@ class ShowCase extends React.Component {
 						position: relative;
 						bottom: 40vh;
 						left: 68.2vw;
-						visibility: ${this.state.PiecesMaxBool !== "at min" ? "visible" : "hidden"}
+						visibility: ${this.state.PiecesMaxBool === "at min" || this.state.Info.length === 3  ? "hidden" : "visible"}
 					}
 		    `}</style>
 
