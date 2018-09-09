@@ -29,6 +29,9 @@ export default () => {
 				#MainView {
 					height: 92vh;
 					overflow:hidden;
+					-webkit-box-shadow:  inset 0px -13px 103px -6px rgba(57,54,61,1);
+					-moz-box-shadow:  inset 0px -13px 103px -6px rgba(57,54,61,1);
+					box-shadow:  inset 0px -13px 103px -6px rgba(57,54,61,1);
 				}
 
 	      #mistyIMG {

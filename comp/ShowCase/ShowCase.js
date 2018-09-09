@@ -10,17 +10,17 @@ class ShowCase extends React.Component {
 		super(props)
 		this.state = {
 			Info:  [{
-					title: "dog1",
+					title: "Project Number A",
 					pic: '/static/img/dog1.jpg',
-					desc: "Are you hungry for apples? ARE YOU HUNGRY FOR APPLESSS!? Nice to wheat you! Are you kidding? I'm hoping I can get to both of them, Rick! Lick, lick, lick my balls!"
+					desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
 				},{
-					title: "dog2",
+					title: "Project Number 5",
 					pic: '/static/img/dog2.jpeg',
-					desc: "Like nothing shady ever happened in a fully furnished office? You ever hear about Wall Street Morty? You know what those guys do in their fancy board"
+					desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
 				},{
-						title: "dog3",
+						title: "Project Number B",
 						pic: '/static/img/dog3.jpg',
-						desc: "but not just put it in my mouth and let it slide down my throat, but really eat it! Remote override engaged. No! Yes. Bypassing override! I am aliiiiiveeeeee… Hello."
+						desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
 				}],
 			CurrentDisplay: false,
 			SelectedInfo: null,

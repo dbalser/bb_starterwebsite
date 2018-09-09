@@ -33,12 +33,13 @@ export default () => (
 			}
 
 			#DisplayPiece {
+				color: #CCCCCC;
 				background: #56515C;
 			}
 
 			#DisplayInfo {
 				color: #CCCCCC;
-				background: #39363D
+				background: #56515C;
 			}
 
     `}</style>
