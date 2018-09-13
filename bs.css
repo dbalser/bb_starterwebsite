@@ -3,4 +3,5 @@ body {
 	position: relative;
 	display: none;
 	visibility: visible;
+	display: inline-block;
 }
