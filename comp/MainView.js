@@ -6,11 +6,7 @@ export default () => {
 	return (
 		<div id = 'MainView'>
 
-			<img
-				id = "mistyIMG"
-				src = {mistyIMG}
-				alt="Smiley face" />
-
+			<div id = "MainImg"></div>
 
 			<div
 				id = "mainText" >
@@ -28,20 +24,23 @@ export default () => {
 
 				#MainView {
 					height: 92vh;
-					overflow:hidden;
-					-webkit-box-shadow:  inset 0px -13px 103px -6px rgba(57,54,61,1);
-					-moz-box-shadow:  inset 0px -13px 103px -6px rgba(57,54,61,1);
-					box-shadow:  inset 0px -13px 103px -6px rgba(57,54,61,1);
+					overflow: hidden;
 				}
 
-	      #mistyIMG {
+	      #MainImg {
 	        width: 100%;
 					opacity: .7;
+			    height: 100%;
+					background-image: url(${mistyIMG});
+			    background-attachment: fixed;
+			    background-position: center;
+			    background-repeat: no-repeat;
+			    background-size: cover;
 	      }
 
 				#mainText {
 					position: relative;
-					bottom: 80vh;
+					bottom: 50vh;
 					width: 50%;
 					text-align: center;
 					font-size: 2vw;
