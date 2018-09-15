@@ -1,0 +1,1 @@
+module.exports=__NEXT_REGISTER_PAGE("/aboutUs",function(){return{page:webpackJsonp([3],{206:function(e,t,u){e.exports=u(207)},207:function(e,t,u){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var n=u(1),o=u.n(n);t.default=function(){return o.a.createElement("div",{id:"test"},"About us")}}},[206]).default}});
