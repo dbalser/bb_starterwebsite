@@ -5,9 +5,9 @@ export default () => {
 	return (
 		<div id = 'Socials'>
 
-			<a className = "button" id = "insta" href = "https://www.instagram.com/londel111/">Instagram</a>
-			<a className = "button" id = "linkedin" href = "https://www.linkedin.com/in/brodiebalser/">LinkedIn</a>
-			<a className = "button" id = "github" href = "https://github.com/uumoss-bb">Github</a>
+			<a className = "button" id = "insta" href = "">Instagram</a>
+			<a className = "button" id = "linkedin" href = "">LinkedIn</a>
+			<a className = "button" id = "github" href = "">Github</a>
 
 
 			<style jsx >{`
@@ -16,7 +16,6 @@ export default () => {
 					width: 100%;
 					height: 100px;
 					margin: 0;
-
 				}
 				.button {
 					border-radius: 10px;
