@@ -13,6 +13,7 @@ const Nav = () => {
 	      nav {
 					width: 98%;
 					padding:1%;
+					
 	      }
 
 				h2 {

@@ -16,6 +16,7 @@ export default () => {
 					width: 100%;
 					height: 100px;
 					margin: 0;
+
 				}
 				.button {
 					border-radius: 10px;
@@ -23,6 +24,13 @@ export default () => {
 					margin: 5%;
 					padding: 1%;
 					text-decoration: none;
+					position: relative;
+					top: 6vh;
+				}
+				.button:hover {
+					-webkit-box-shadow: 0px 0px 144px -9px #FFFFFF;
+					-moz-box-shadow: 0px 0px 144px -9px #FFFFFF;
+					box-shadow: 0px 0px 144px -9px #FFFFFF;
 				}
 				#insta {
 					margin-left: 25%;

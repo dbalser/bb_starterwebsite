@@ -23,20 +23,20 @@ class ShowCase extends React.Component {
 					title: "Project Number B",
 					pic: '/static/img/dog3.jpg',
 					desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
-				},{
+				}, {
 
-					title: "A",
-					pic: '/static/img/dog1.jpg',
-					desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
-				},{
-					title: "5",
-					pic: '/static/img/dog2.jpeg',
-					desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
-				},{
-					title: "B",
-					pic: '/static/img/dog3.jpg',
-					desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
-				}],
+						title: "asdfA",
+						pic: '/static/img/dog1.jpg',
+						desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
+					},{
+						title: "Prasdf 5",
+						pic: '/static/img/dog2.jpeg',
+						desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
+					},{
+						title: "Proasdfasd",
+						pic: '/static/img/dog3.jpg',
+						desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
+					}],
 			CurrentDisplay: false,
 			SelectedInfo: null,
 			AnimeName: null,
@@ -64,7 +64,7 @@ class ShowCase extends React.Component {
 
 		let max = 0
 		let PiecesBottomNum = this.state.PiecesBottomNum
-		let movesUp = 89.1
+		let movesUp = 90
 
 		let NumOfInfo = this.state.Info.length
 		// this acts like .ceiling its the remander is not 0
@@ -144,16 +144,15 @@ class ShowCase extends React.Component {
 
 					#ShowCase {
 						height: 80vh;
-						position: relative;
+						overflow: hidden;
 					}
 					#AllPieces {
 						width:85vw;
 						height: 88vh;
 						display: inline-block;
 						position: relative;
-						bottom: 108vh;
+						bottom: 110.5vh;
 						left: 8%;
-						overflow: hidden;
 					}
 					#UpArrow {
 						width: 15%;

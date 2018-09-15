@@ -2,6 +2,6 @@
 body {
 	position: relative;
 	display: none;
-	visibility: visible;
+	visibility: hidden;
 	display: inline-block;
 }

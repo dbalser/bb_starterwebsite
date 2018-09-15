@@ -17,9 +17,6 @@ export default () => {
 
 
 
-
-
-
 			<style jsx >{`
 
 				#MainView {

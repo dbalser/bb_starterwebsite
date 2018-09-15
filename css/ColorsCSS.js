@@ -42,7 +42,7 @@ export default () => (
 				background: #56515C;
 			}
 
-			button {
+			.button {
 				color: #39363D;
 			}
 			#insta {

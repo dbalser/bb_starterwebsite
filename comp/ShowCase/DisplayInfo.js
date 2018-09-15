@@ -30,13 +30,13 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 					}
 
 					#DisplayInfo {
+
 						width:100%;
 						height: 80vh;
 						display: inline-block;
 						position: relative;
 						right: 100vw;
 						z-index: 5;
-
 					}
 
 					.show {

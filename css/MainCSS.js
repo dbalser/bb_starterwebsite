@@ -6,13 +6,12 @@ export default () => (
 
       body, #wrapper {
         width: 100%;
-				min-height: 100%;
-				margin: 0 auto;
+			  margin: 0 auto -170px;
       }
 
 			* {
 				padding:0;
-				margin:0 auto;
+				margin:0;
 			}
 
 
