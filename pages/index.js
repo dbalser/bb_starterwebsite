@@ -9,6 +9,8 @@ import MainCSS from '../css/MainCSS'
 import ColorsCSS from '../css/ColorsCSS'
 
 
+//url https://brodiesport.herokuapp.com/
+
 class index extends React.Component {
 
 	// constructor(props) {
