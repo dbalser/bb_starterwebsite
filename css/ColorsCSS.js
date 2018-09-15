@@ -42,6 +42,19 @@ export default () => (
 				background: #56515C;
 			}
 
+			button {
+				color: #39363D;
+			}
+			#insta {
+				background: #E03667;
+			}
+			#linkedin {
+				background: #1674B3;
+			}
+			#github {
+				background: #CCCCCC;
+			}
+
     `}</style>
   </div>
 )
