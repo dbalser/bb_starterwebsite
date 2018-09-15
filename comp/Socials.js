@@ -16,7 +16,6 @@ export default () => {
 					width: 100%;
 					height: 100px;
 					margin: 0;
-
 				}
 				.button {
 					border-radius: 10px;
