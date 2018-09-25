@@ -42,6 +42,19 @@ export default () => (
 				background: #56515C;
 			}
 
+			#Email {
+				color: #CCCCCC;
+				background: #56515C;
+			}
+
+			input {
+				background: #56515C;
+			}
+			input::placeholder {
+				color: #CCCCCC;
+			}
+
+
 			.button {
 				color: #39363D;
 			}

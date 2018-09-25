@@ -4,6 +4,7 @@ import Nav from '../comp/Nav'
 import MainView from '../comp/MainView'
 import ShowCase from '../comp/ShowCase/ShowCase'
 import AboutUs from '../comp/AboutUs'
+import Email from '../comp/Email'
 import Socials from '../comp/Socials'
 import MainCSS from '../css/MainCSS'
 import ColorsCSS from '../css/ColorsCSS'
@@ -29,6 +30,7 @@ class index extends React.Component {
 				<MainView/>
 				<ShowCase/>
 				<AboutUs/>
+				<Email/>
 				<Socials/>
 
 				<MainCSS/>
