@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-		"export": "next export",
+    "export": "next export",
     "start": "next start -p $PORT",
     "heroku-postbuild": "next build"
   },
@@ -27,6 +27,7 @@
     "normalize.css": "^8.0.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
+    "react-responsive": "^5.0.0",
     "webpack": "^4.17.1"
   }
 }

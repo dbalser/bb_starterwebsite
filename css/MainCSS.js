@@ -29,8 +29,6 @@ export default () => (
 				box-shadow: 0px 0px 144px -9px #FFFFFF;
 			}
 
-
-
     `}</style>
   </div>
 )
