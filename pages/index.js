@@ -34,24 +34,23 @@ class index extends React.Component {
 		return (
 
 			<div id = "wrapper">
-
-				<MediaQuery maxWidth={500}>
-
-	      </MediaQuery>
-
+			<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+			
 				<MediaQuery minDeviceWidth={420}>
 					{(matches) => {
+
 					  if (matches) {
-					    return (
-							<React.Fragment>
-								<Nav/>
-								<MainView/>
-								<ShowCase/>
-								<AboutUs/>
-								<Email/>
-								<Socials/>
-							</React.Fragment>
-						)
+
+				    	return (
+								<React.Fragment>
+									<Nav/>
+									<MainView/>
+									<ShowCase/>
+									<AboutUs/>
+									<Email/>
+									<Socials/>
+								</React.Fragment>
+							)
 					  } else {
 					    return	 (
 								<React.Fragment>

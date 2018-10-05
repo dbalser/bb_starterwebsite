@@ -1,8 +1,18 @@
 import React from 'react'
 const mistyIMG = '/static/img/mistymountain.jpg'
+import $ from 'jquery'
 
 export default () => {
 
+	// ios disabled background-attachment: fixed this solves it and i got it from
+	// here: https://stackoverflow.com/questions/20443574/fixed-background-image-with-ios7
+	// Cache the Window object
+  let $window = $(window);
+	$window.scroll(function() {
+	  var scrolledY = $window.scrollTop();
+	  $('#MainImg').css('background-position', 'left ' + ((scrolledY)) + 'px');
+	});
+	//---------
 	return (
 		<div id = 'MainView'>
 
@@ -35,7 +45,7 @@ export default () => {
 					opacity: .7;
 			    height: 100%;
 					background-image: url(${mistyIMG});
-			    background-attachment: fixed;
+			    // background-attachment: fixed;
 			    background-position: center;
 			    background-repeat: no-repeat;
 			    background-size: cover;
@@ -43,11 +53,11 @@ export default () => {
 
 				#mainText {
 					position: relative;
-					bottom: 50vh;
-					width: 50%;
+					bottom: 65vh;
+					width: 60%;
 					text-align: center;
-					font-size: 2vw;
-					margin-left: 25.5%;
+					font-size: 7vw;
+					margin-left: 20%;
 				}
 
 	    `}</style>

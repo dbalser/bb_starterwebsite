@@ -6,18 +6,20 @@ const Nav = () => {
 	return (
 		<nav>
 
-			<h2>shit is working</h2>
+			<h2>Full Stack Developer</h2>
 
 			<style jsx>{`
 
 	      nav {
 					width: 98%;
+					height: 10vh;
 					padding:1%;
 	      }
 
 				h2 {
 					min-width: 100%;
-					margin:0;
+					margin:3% 5%;;
+					font-size: 8vw;
 				}
 
     	`}</style>
