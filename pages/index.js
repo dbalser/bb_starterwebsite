@@ -35,14 +35,15 @@ class index extends React.Component {
 
 			<div id = "wrapper">
 			<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-			
-				<MediaQuery minDeviceWidth={420}>
+
+				<MediaQuery maxDeviceWidth={420}>
 					{(matches) => {
 
-					  if (matches) {
+					  if (!matches) {
 
 				    	return (
 								<React.Fragment>
+								{console.log('hit')}
 									<Nav/>
 									<MainView/>
 									<ShowCase/>
@@ -52,8 +53,10 @@ class index extends React.Component {
 								</React.Fragment>
 							)
 					  } else {
+
 					    return	 (
 								<React.Fragment>
+								{console.log('got')}
 									<NavMobile/>
 									<MainViewMobile/>
 									<ShowCaseMobile/>
