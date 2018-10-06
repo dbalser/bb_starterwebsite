@@ -12,20 +12,20 @@ class ShowCase extends React.Component {
 		this.state = {
 			Info:  [{
 
-					title: "Project Number A",
+					title: "Project Number 1",
 					pic: '/static/img/dog1.jpg',
 					desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
 				},{
-					title: "Project Number 5",
+					title: "Project Number 2",
 					pic: '/static/img/dog2.jpeg',
 					desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
 				},{
-					title: "Project Number B",
+					title: "Project Number 3",
 					pic: '/static/img/dog3.jpg',
 					desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
 				}, {
 
-						title: "asdfA",
+						title: "asdf 4",
 						pic: '/static/img/dog1.jpg',
 						desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
 					},{
@@ -33,7 +33,7 @@ class ShowCase extends React.Component {
 						pic: '/static/img/dog2.jpeg',
 						desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
 					},{
-						title: "Proasdfasd",
+						title: "Proasdfasd 6",
 						pic: '/static/img/dog3.jpg',
 						desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
 					}],
@@ -64,7 +64,7 @@ class ShowCase extends React.Component {
 
 		let max = 0
 		let PiecesBottomNum = this.state.PiecesBottomNum
-		let movesUp = 90
+		let movesUp = 79
 
 		let NumOfInfo = this.state.Info.length
 		// this acts like .ceiling its the remander is not 0
@@ -75,7 +75,7 @@ class ShowCase extends React.Component {
 				max += (movesUp / 3)
 			}
 		}
-
+		console.log(max);
 		//handle going above and bellow max
 		if(PiecesBottomNum >= max && bool ) {
 			this.setState({
@@ -115,18 +115,6 @@ class ShowCase extends React.Component {
 			 	AnimeName = {this.state.AnimeName}
 			 	ChangeCurrentView = {this.ChangeCurrentView.bind(this)} />
 
-				<img
-					id = "UpArrow"
-					src = {UpArrow}
-					alt="Smiley face"
-					onClick = {() => this.ChangePiecesShown(true)}/>
-
-				<img
-					id = "DownArrow"
-					src = {DownArrow}
-					alt="Smiley face"
-					onClick = {() => this.ChangePiecesShown(false)}/>
-
 				<div id = "AllPieces">
 					{this.state.Info.map((DisplayItem, i) => {
 
@@ -144,14 +132,14 @@ class ShowCase extends React.Component {
 
 					#ShowCase {
 						height: 80vh;
-						overflow: hidden;
+						overflow: scroll;
 					}
 					#AllPieces {
 						width:85vw;
 						height: 88vh;
 						display: inline-block;
 						position: relative;
-						bottom: 110.5vh;
+						bottom: 78vh;
 						left: 8%;
 					}
 					#UpArrow {

@@ -60,9 +60,7 @@ class index extends React.Component {
 									<NavMobile/>
 									<MainViewMobile/>
 									<ShowCaseMobile/>
-									<AboutUsMobile/>
-									<EmailMobile/>
-									<SocialsMobile/>
+
 								</React.Fragment>
 							)
 					  }
@@ -76,5 +74,7 @@ class index extends React.Component {
 	}
 }
 
-
+// <AboutUsMobile/>
+// <EmailMobile/>
+// <SocialsMobile/>
 export default index

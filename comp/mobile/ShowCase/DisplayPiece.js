@@ -21,12 +21,12 @@ export default ({DisplayItem, PiecesBottomNum, AnimeName, ChangeCurrentView}) =>
 				}
 
 				#DisplayPiece {
-					width:25%;
+					width:90%;
 					height: 75vh;
 					display: inline-block;
 					position: relative;
 					bottom: ${PiecesBottomNum}vh;
-					left: 8vw;
+					left: 4vw;
 					margin: 1%;
 					margin-bottom: 8%;
 					border-radius: 25px;
@@ -44,7 +44,7 @@ export default ({DisplayItem, PiecesBottomNum, AnimeName, ChangeCurrentView}) =>
 				#DisplayTitle {
 					margin:5%;
 					text-align: left;
-					font-size: 2vw;
+					font-size: 6vw;
 				}
 
 				@-webkit-keyframes hvr-wobble-vertical {
