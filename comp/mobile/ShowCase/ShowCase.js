@@ -40,8 +40,6 @@ class ShowCase extends React.Component {
 			CurrentDisplay: false,
 			SelectedInfo: null,
 			AnimeName: null,
-			PiecesBottomNum: 0,
-			PiecesMaxBool: 'at min'
 		}
 	}
 
@@ -60,51 +58,6 @@ class ShowCase extends React.Component {
 		}
 	}
 
-	ChangePiecesShown(bool) {
-
-		let max = 0
-		let PiecesBottomNum = this.state.PiecesBottomNum
-		let movesUp = 79
-
-		let NumOfInfo = this.state.Info.length
-		// this acts like .ceiling its the remander is not 0
-		NumOfInfo % 3 === 0 ? null : NumOfInfo += (3 - (NumOfInfo % 3))
-		//this caculates max
-		for (let i = 1; i <= NumOfInfo; i++) {
-			if(i > 3) {
-				max += (movesUp / 3)
-			}
-		}
-		console.log(max);
-		//handle going above and bellow max
-		if(PiecesBottomNum >= max && bool ) {
-			this.setState({
-				PiecesMaxBool: 'at max'
-			})
-			return
-		}
-		else if (PiecesBottomNum <= 0 && !bool){
-			this.setState({
-				PiecesMaxBool: 'at min'
-			})
-			return
-		}
-
-		//move pieces up
-		if(bool) {
-			this.setState({
-				PiecesMaxBool: (PiecesBottomNum + movesUp) >= max ? 'at max' : 'in middle', // this looks ahead and decides
-				PiecesBottomNum: PiecesBottomNum += movesUp
-			})
-		}
-		//move pieces up
-		else {
-			this.setState({
-				PiecesMaxBool: (PiecesBottomNum - movesUp) <= 0 ? 'at min' : 'in middle', // this looks ahead and decides
-				PiecesBottomNum: this.state.PiecesBottomNum -= movesUp
-			})
-		}
-	}
 
 	render() {
 		return (
@@ -120,7 +73,6 @@ class ShowCase extends React.Component {
 
 						return (<DisplayPiece key = {i}
 							DisplayItem = {DisplayItem}
-							PiecesBottomNum = {this.state.PiecesBottomNum}
 							AnimeName = {this.state.AnimeName}
 							ChangeCurrentView = {this.ChangeCurrentView.bind(this)}
 							/>)
@@ -132,31 +84,15 @@ class ShowCase extends React.Component {
 
 					#ShowCase {
 						height: 80vh;
-						overflow: scroll;
+						overflow: hidden;
 					}
 					#AllPieces {
-						width:85vw;
-						height: 88vh;
+						width:100vw;
+						height: 89vh;
+						overflow: scroll;
 						display: inline-block;
 						position: relative;
-						bottom: 78vh;
-						left: 8%;
-					}
-					#UpArrow {
-						width: 15%;
-						z-index: 4;
-						position: relative;
-						bottom: 75vh;
-						left: 83vw;
-						visibility: ${this.state.PiecesMaxBool === "at max" || this.state.Info.length === 3 ? "hidden" : "visible"}
-					}
-					#DownArrow {
-						width: 15%;
-						z-index: 4;
-						position: relative;
-						bottom: 40vh;
-						left: 68.2vw;
-						visibility: ${this.state.PiecesMaxBool === "at min" || this.state.Info.length === 3  ? "hidden" : "visible"}
+						bottom: 85vh;
 					}
 		    `}</style>
 

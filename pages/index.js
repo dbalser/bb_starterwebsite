@@ -31,6 +31,8 @@ class index extends React.Component {
 	// async componentDidMount () {}
 
 	render() {
+
+		console.error("I need to store all the info on the site here...");
 		return (
 
 			<div id = "wrapper">
@@ -43,7 +45,6 @@ class index extends React.Component {
 
 				    	return (
 								<React.Fragment>
-								{console.log('hit')}
 									<Nav/>
 									<MainView/>
 									<ShowCase/>
@@ -56,11 +57,12 @@ class index extends React.Component {
 
 					    return	 (
 								<React.Fragment>
-								{console.log('got')}
 									<NavMobile/>
 									<MainViewMobile/>
 									<ShowCaseMobile/>
-
+									<AboutUsMobile/>
+									<EmailMobile/>
+									<SocialsMobile/>
 								</React.Fragment>
 							)
 					  }

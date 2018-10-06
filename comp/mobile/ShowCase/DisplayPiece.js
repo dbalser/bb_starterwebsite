@@ -21,12 +21,12 @@ export default ({DisplayItem, PiecesBottomNum, AnimeName, ChangeCurrentView}) =>
 				}
 
 				#DisplayPiece {
-					width:90%;
+					width:85%;
 					height: 75vh;
 					display: inline-block;
 					position: relative;
-					bottom: ${PiecesBottomNum}vh;
-					left: 4vw;
+					bottom: -6vh;
+					left: 6.5vw;
 					margin: 1%;
 					margin-bottom: 8%;
 					border-radius: 25px;

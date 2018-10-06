@@ -63,16 +63,17 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 					}
 
 					h1 {
-						font-size: 3.5vw;
+						font-size: 8vw;
 						padding: 4.5%;
 						background: #56515C;
+						text-align: center;
 					}
 
 					p {
 						padding: 3.5% 5%;
-						font-size: 1.6vw;
-						line-height:50px;
-						letter-spacing: 1.3px;
+						font-size: 4.5vw;
+						line-height:80px;
+						letter-spacing: 2px;
 					}
 
 
