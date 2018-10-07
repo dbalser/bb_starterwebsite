@@ -63,6 +63,9 @@ class ShowCase extends React.Component {
 		return (
 			<div id = 'ShowCase'>
 
+				<div id = "ScrollBtn">
+					<p>scroll down</p>
+				</div>
 
 				<DisplayInfo  SelectedInfo = {this.state.SelectedInfo}
 			 	AnimeName = {this.state.AnimeName}
@@ -93,6 +96,19 @@ class ShowCase extends React.Component {
 						display: inline-block;
 						position: relative;
 						bottom: 85vh;
+					}
+					#ScrollBtn {
+						width: 100%;
+						height: 10vh;
+						font-size: 8vw;
+						text-align: center;
+						position: relative;
+						top: 70vh;
+						z-index: 10;
+						border: solid 1px;
+					}
+					#ScrollBtn p {
+						padding: 3%;
 					}
 		    `}</style>
 

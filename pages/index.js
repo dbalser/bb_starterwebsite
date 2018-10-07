@@ -38,7 +38,7 @@ class index extends React.Component {
 			<div id = "wrapper">
 			<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
-				<MediaQuery maxDeviceWidth={420}>
+				<MediaQuery maxDeviceWidth={400}>
 					{(matches) => {
 
 					  if (!matches) {

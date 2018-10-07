@@ -68,6 +68,10 @@ export default () => (
 				background: #CCCCCC;
 			}
 
+			#ScrollBtn {
+				border: #CCCCCC;
+			}
+
     `}</style>
   </div>
 )
