@@ -63,10 +63,6 @@ class ShowCase extends React.Component {
 		return (
 			<div id = 'ShowCase'>
 
-				<div id = "ScrollBtn">
-					<p>scroll down</p>
-				</div>
-
 				<DisplayInfo  SelectedInfo = {this.state.SelectedInfo}
 			 	AnimeName = {this.state.AnimeName}
 			 	ChangeCurrentView = {this.ChangeCurrentView.bind(this)} />
@@ -91,24 +87,11 @@ class ShowCase extends React.Component {
 					}
 					#AllPieces {
 						width:100vw;
-						height: 89vh;
 						overflow: scroll;
 						display: inline-block;
 						position: relative;
 						bottom: 85vh;
-					}
-					#ScrollBtn {
-						width: 100%;
-						height: 10vh;
-						font-size: 8vw;
-						text-align: center;
-						position: relative;
-						top: 70vh;
-						z-index: 10;
-						border: solid 1px;
-					}
-					#ScrollBtn p {
-						padding: 3%;
+						border:solid red;
 					}
 		    `}</style>
 

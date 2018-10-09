@@ -44,26 +44,26 @@ class index extends React.Component {
 					  if (!matches) {
 
 				    	return (
-								<React.Fragment>
+								<div>
 									<Nav/>
 									<MainView/>
 									<ShowCase/>
 									<AboutUs/>
 									<Email/>
 									<Socials/>
-								</React.Fragment>
+								</div>
 							)
 					  } else {
 
 					    return	 (
-								<React.Fragment>
+								<div>
 									<NavMobile/>
 									<MainViewMobile/>
 									<ShowCaseMobile/>
 									<AboutUsMobile/>
 									<EmailMobile/>
 									<SocialsMobile/>
-								</React.Fragment>
+								</div>
 							)
 					  }
 					}}

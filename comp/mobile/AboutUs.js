@@ -19,23 +19,21 @@ export default () => {
 
 				#AboutUs {
 					width:100%;
-					height: 50vh;
 				}
 
 				#UsImg {
-					width: 30%;
+					width: 70%;
 					border-radius: 40px;
-					margin: 3% 5%;
+					margin: 10% 15%;
 				}
 
 				p {
-					width:50%;
-					position: relative;
-					display: inline-block;
-					bottom: 9vh;
-					font-size: 1.6vw;
-					line-height:40px;
-					letter-spacing: 1.3px;
+					width:80%;
+					padding-bottom: 10%;
+					margin-left: 10%;
+					font-size: 4.5vw;
+					line-height:80px;
+					letter-spacing: 2px;
 				}
 
 	    `}</style>
