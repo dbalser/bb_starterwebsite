@@ -21,7 +21,7 @@ export default () => {
 			<style jsx >{`
 
 				#MainView {
-					height: 100vh;
+					height: 1700px;
 					overflow: hidden;
 
 					//gradient
@@ -45,7 +45,7 @@ export default () => {
 
 				#mainText {
 					position: relative;
-					bottom: 65vh;
+					bottom: 1200px;
 					width: 60%;
 					text-align: center;
 					font-size: 7vw;

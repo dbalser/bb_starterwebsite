@@ -82,16 +82,16 @@ class ShowCase extends React.Component {
 				<style jsx >{`
 
 					#ShowCase {
-						height: 80vh;
+						height:	 1530px;
 						overflow: hidden;
 					}
 					#AllPieces {
 						width:100vw;
+						height: 1700px;
 						overflow: scroll;
 						display: inline-block;
 						position: relative;
-						bottom: 85vh;
-						border:solid red;
+						bottom: 1630px;
 					}
 		    `}</style>
 

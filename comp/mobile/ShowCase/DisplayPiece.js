@@ -22,10 +22,10 @@ export default ({DisplayItem, PiecesBottomNum, AnimeName, ChangeCurrentView}) =>
 
 				#DisplayPiece {
 					width:85%;
-					height: 75vh;
+					height: 1420px;
 					display: inline-block;
 					position: relative;
-					bottom: -6vh;
+					bottom: -130px;
 					left: 6.5vw;
 					margin: 1%;
 					margin-bottom: 8%;
@@ -36,7 +36,7 @@ export default ({DisplayItem, PiecesBottomNum, AnimeName, ChangeCurrentView}) =>
 				}
 				#DisplayPic {
 					width: 100%;
-					height: 65vh;
+					height: 1250px;
 					overflow: hidden;
 					background-position: center;
 					background-size: cover;

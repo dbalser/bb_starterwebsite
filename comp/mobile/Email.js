@@ -16,10 +16,6 @@ export default () => {
 
 			<style jsx >{`
 
-				#Email {
-					height: 35vh;
-				}
-
 				#IntroText {
 					width: 70%;
 					margin: 5% 18%;
@@ -36,7 +32,7 @@ export default () => {
 
 				.Email {
 					width: 50%;
-					height: 5vh;
+					height: 100px;
 
 					-webkit-appearance: none; // this some how makes inset work!?!?!?!
 					appearance: none; // this some how makes inset work!?!?!?!
@@ -47,7 +43,7 @@ export default () => {
 
 				.Text {
 					width: 100%;
-					height: 15vh;
+					height: 280px;
 					margin-left: 3.5%;
 
 					-webkit-appearance: none; // this some how makes inset work!?!?!?!
