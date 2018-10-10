@@ -5,8 +5,7 @@ export default () => {
 		<div id = "Email">
 
 			<div id = "IntroText">
-				<p id = "p1">LETS</p>
-				<p id = "p2">CHAT</p>
+				<p id = "p1">LETS CHAT</p>
 			</div>
 
 			<form action="https://formspree.io/zachary.ezra@noxfit.com" method="POST">
@@ -22,35 +21,25 @@ export default () => {
 				}
 
 				#IntroText {
-					width: 20%;
-					height: 100%;
-					position: relative;
-					top: -2vh;
-					left: 2vw;
-					display: inline-block;
+					width: 70%;
+					margin: 5% 18%;
 				}
 				p {
-					font-size: 5em;
-				}
-				#p1 {
-					margin
-				}
-				#p2 {
-
+					font-size: 7em;
 				}
 
 				form {
-					width: 60%;
+					width: 80%;
 					height: 60%;
-					position: relative;
-					top: 10%;
-					display: inline-block;
+					margin-left:8%;
 				}
 
 				.Email {
 					width: 50%;
 					height: 5vh;
 
+					-webkit-appearance: none; // this some how makes inset work!?!?!?!
+					appearance: none; // this some how makes inset work!?!?!?!
 					-webkit-box-shadow: inset 10px 10px 80px -13px #39363D;
 					-moz-box-shadow: inset 10px 10px 80px -13px #39363D;
 					box-shadow: inset 10px 10px 80px -13px #39363D;
@@ -61,6 +50,8 @@ export default () => {
 					height: 15vh;
 					margin-left: 3.5%;
 
+					-webkit-appearance: none; // this some how makes inset work!?!?!?!
+					appearance: none; // this some how makes inset work!?!?!?!
 					-webkit-box-shadow: inset 10px 10px 80px -13px #39363D;
 					-moz-box-shadow: inset 10px 10px 80px -13px #39363D;
 					box-shadow: inset 10px 10px 80px -13px #39363D;
@@ -73,8 +64,10 @@ export default () => {
 				}
 
 				input::placeholder {
-					padding: 5%;
-					font-size: 1.2vw;
+					position: relative;
+					bottom: 50px;
+					padding:10%;
+					font-size: 3vw;
 				}
 
 				.button {
@@ -82,7 +75,11 @@ export default () => {
 					padding: 1%;
 					position: relative;
 					top: 0vh;
-					left: 60vw;
+					left: 70vw;
+					font-size: 6vw !important;
+					color: #CCCCCC;
+					-webkit-appearance: none;
+					appearance: none;
 				}
 
 	    `}</style>
