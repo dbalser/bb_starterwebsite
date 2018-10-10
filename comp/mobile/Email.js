@@ -77,7 +77,6 @@ export default () => {
 					top: 0vh;
 					left: 70vw;
 					font-size: 6vw !important;
-					
 					color: #CCCCCC;
 					-webkit-appearance: none;
 					appearance: none;
