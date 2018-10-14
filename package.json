@@ -29,6 +29,7 @@
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-responsive": "^5.0.0",
+    "react-responsive-hoc": "^1.0.0",
     "webpack": "^4.17.1"
   }
 }
