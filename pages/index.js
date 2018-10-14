@@ -23,13 +23,39 @@ import SocialsMobile from '../comp/mobile/Socials'
 
 class index extends React.Component {
 
-	// constructor(props) {
-	// 	super(props)
-	// 	this.state = {
-	//
-	// 	}
-	// }
-	//
+	constructor(props) {
+		super(props)
+		this.state = {
+			ShowCaseInfo:  [{
+
+					title: "Project Number A butt",
+					pic: '/static/img/dog1.jpg',
+					desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
+				},{
+					title: "Project Number 5",
+					pic: '/static/img/dog2.jpeg',
+					desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
+				},{
+					title: "Project Number B",
+					pic: '/static/img/dog3.jpg',
+					desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
+				}, {
+
+					title: "asdfA",
+					pic: '/static/img/dog1.jpg',
+					desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
+				},{
+					title: "Prasdf 5",
+					pic: '/static/img/dog2.jpeg',
+					desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
+				},{
+					title: "Proasdfasd",
+					pic: '/static/img/dog3.jpg',
+					desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
+				}]
+		}
+	}
+
 	// async componentDidMount () {}
 
 	render() {
@@ -39,12 +65,17 @@ class index extends React.Component {
 		return (
 
 			<MediaQueryProvider >
+				<meta name="description" content="We live by NO Excuses"/>
+				<meta name="keywords" content="Online Coaching, Fitness, t-shirts"/>
+				<meta name="author" content="Brodie Balesr"/>
+		    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+				<meta name="HandheldFriendly" content="true" />
 				<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
 				<MediaQuery query="(min-device-width: 421px)">
           <Nav/>
 				  <MainView/>
-				  <ShowCase/>
+				  <ShowCase Info = {this.state.ShowCaseInfo}/>
 				  <AboutUs/>
 				  <Email/>
 				  <Socials/>
@@ -53,7 +84,7 @@ class index extends React.Component {
 				<MediaQuery query="(max-device-width: 420px)">
           <NavMobile/>
 					<MainViewMobile/>
-					<ShowCaseMobile/>
+					<ShowCaseMobile Info = {this.state.ShowCaseInfo}/>
 					<AboutUsMobile/>
 					<EmailMobile/>
 					<SocialsMobile/>

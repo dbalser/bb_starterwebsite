@@ -18,7 +18,7 @@ export default () => {
 					margin: 0;
 				}
 				#insta {
-					margin-left: 25%;
+					margin-left: 28%;
 				}
 
 	    `}</style>

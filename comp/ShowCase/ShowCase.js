@@ -10,33 +10,6 @@ class ShowCase extends React.Component {
 	constructor(props) {
 		super(props)
 		this.state = {
-			Info:  [{
-
-					title: "Project Number A",
-					pic: '/static/img/dog1.jpg',
-					desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
-				},{
-					title: "Project Number 5",
-					pic: '/static/img/dog2.jpeg',
-					desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
-				},{
-					title: "Project Number B",
-					pic: '/static/img/dog3.jpg',
-					desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
-				}, {
-
-						title: "asdfA",
-						pic: '/static/img/dog1.jpg',
-						desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
-					},{
-						title: "Prasdf 5",
-						pic: '/static/img/dog2.jpeg',
-						desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
-					},{
-						title: "Proasdfasd",
-						pic: '/static/img/dog3.jpg',
-						desc: "That guy is the Red Grin Grumbold of pretending he knows what's going on. Oh you agree huh? You like that Red Grin Grumbold reference? Well guess what, I made him up. You really are your father's children. Think for yourselves, don't be sheep. I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?! Is he keeping his shoulders square? Oooooooh he's tryin'! That just sounds like slavery with extra steps."
-					}],
 			CurrentDisplay: false,
 			SelectedInfo: null,
 			AnimeName: null,
@@ -66,7 +39,7 @@ class ShowCase extends React.Component {
 		let PiecesBottomNum = this.state.PiecesBottomNum
 		let movesUp = 90
 
-		let NumOfInfo = this.state.Info.length
+		let NumOfInfo = this.props.Info.length
 		// this acts like .ceiling its the remander is not 0
 		NumOfInfo % 3 === 0 ? null : NumOfInfo += (3 - (NumOfInfo % 3))
 		//this caculates max
@@ -128,7 +101,7 @@ class ShowCase extends React.Component {
 					onClick = {() => this.ChangePiecesShown(false)}/>
 
 				<div id = "AllPieces">
-					{this.state.Info.map((DisplayItem, i) => {
+					{this.props.Info.map((DisplayItem, i) => {
 
 						return (<DisplayPiece key = {i}
 							DisplayItem = {DisplayItem}
@@ -151,7 +124,7 @@ class ShowCase extends React.Component {
 						height: 88vh;
 						display: inline-block;
 						position: relative;
-						bottom: 110.5vh;
+						bottom: 109vh;
 						left: 8%;
 					}
 					#UpArrow {
@@ -160,7 +133,7 @@ class ShowCase extends React.Component {
 						position: relative;
 						bottom: 75vh;
 						left: 83vw;
-						visibility: ${this.state.PiecesMaxBool === "at max" || this.state.Info.length === 3 ? "hidden" : "visible"}
+						visibility: ${this.state.PiecesMaxBool === "at max" || this.props.Info.length === 3 ? "hidden" : "visible"}
 					}
 					#DownArrow {
 						width: 15%;
@@ -168,7 +141,7 @@ class ShowCase extends React.Component {
 						position: relative;
 						bottom: 40vh;
 						left: 68.2vw;
-						visibility: ${this.state.PiecesMaxBool === "at min" || this.state.Info.length === 3  ? "hidden" : "visible"}
+						visibility: ${this.state.PiecesMaxBool === "at min" || this.props.Info.length === 3  ? "hidden" : "visible"}
 					}
 		    `}</style>
 
