@@ -1,5 +1,5 @@
 
-import MediaQuery from 'react-responsive';
+import { MediaQueryProvider, MediaQuery } from 'react-responsive-hoc';
 //components
 import MyContext from '../comp/MyContext'
 import Nav from '../comp/Nav'
@@ -34,46 +34,35 @@ class index extends React.Component {
 
 	render() {
 
+
 		console.error("I need to store all the info on the site here...");
 		return (
 
-			<div id = "wrapper">
-			<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+			<MediaQueryProvider >
+				<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
-				<MediaQuery maxDeviceWidth={420}>
-					{(matches) => {
+				<MediaQuery query="(min-device-width: 421px)">
+          <Nav/>
+				  <MainView/>
+				  <ShowCase/>
+				  <AboutUs/>
+				  <Email/>
+				  <Socials/>
+        </MediaQuery>
 
-					  if (!matches) {
-
-				    	return (
-								<div>
-									<Nav/>
-									<MainView/>
-									<ShowCase/>
-									<AboutUs/>
-									<Email/>
-									<Socials/>
-								</div>
-							)
-					  } else {
-
-					    return	 (
-								<div>
-									<NavMobile/>
-									<MainViewMobile/>
-									<ShowCaseMobile/>
-									<AboutUsMobile/>
-									<EmailMobile/>
-									<SocialsMobile/>
-								</div>
-							)
-					  }
-					}}
-					</MediaQuery>
+				<MediaQuery query="(max-device-width: 420px)">
+          <NavMobile/>
+					<MainViewMobile/>
+					<ShowCaseMobile/>
+					<AboutUsMobile/>
+					<EmailMobile/>
+					<SocialsMobile/>
+        </MediaQuery>
 
 				<MainCSS/>
 				<ColorsCSS/>
-			</div>
+
+      </MediaQueryProvider>
 		)
 	}
 }
