@@ -20,8 +20,12 @@ export default class MyDocument extends Document {
 			    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 					<meta name="HandheldFriendly" content="true" />
 					<meta name="google-site-verification" content="hzg-vD_2Lt8NmSR3disYG1mkA3YeowlvDzVQsP5mZSM" />
+
 					<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        </Head>
+
+					<title>Brodies Port</title>
+
+				</Head>
         <body className="custom_class">
           <Main />
           <NextScript />
