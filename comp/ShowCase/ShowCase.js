@@ -124,7 +124,7 @@ class ShowCase extends React.Component {
 						height: 88vh;
 						display: inline-block;
 						position: relative;
-						bottom: 109vh;
+						bottom: 111vh;
 						left: 8%;
 					}
 					#UpArrow {

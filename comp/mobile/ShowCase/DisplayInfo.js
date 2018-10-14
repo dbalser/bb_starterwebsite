@@ -70,10 +70,17 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 					}
 
 					p {
+						height: 32vh;
+						overflow-y: scroll;
 						padding: 3.5% 5%;
 						font-size: 4.5vw;
 						line-height:80px;
 						letter-spacing: 2px;
+					}
+
+					::-webkit-scrollbar {
+					    width: 0px;  /* remove scrollbar space */
+					    background: transparent;  /* optional: just make scrollbar invisible */
 					}
 
 

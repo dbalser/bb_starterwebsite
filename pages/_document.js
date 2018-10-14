@@ -23,8 +23,6 @@ export default class MyDocument extends Document {
 
 					<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
-					<title>Brodies Port</title>
-
 				</Head>
         <body className="custom_class">
           <Main />
