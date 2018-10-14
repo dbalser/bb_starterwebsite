@@ -4,7 +4,7 @@ export default () => (
   <div >
     <style jsx global>{`
 
-      body, #wrapper {
+      body {
         width: 100%;
 			  margin: 0 auto -170px;
       }
