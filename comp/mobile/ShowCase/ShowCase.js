@@ -64,7 +64,8 @@ class ShowCase extends React.Component {
 						overflow: scroll;
 						display: inline-block;
 						position: relative;
-						bottom: 1630px;
+						bottom: 1650px;
+						border:solid red;
 					}
 		    `}</style>
 
