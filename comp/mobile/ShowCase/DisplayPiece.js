@@ -23,7 +23,6 @@ export default ({DisplayItem, PiecesBottomNum, AnimeName, ChangeCurrentView}) =>
 				#DisplayPiece {
 					width:85%;
 					height: 1420px;
-					display: inline-block;
 					position: relative;
 					bottom: -130px;
 					left: 6.5vw;
