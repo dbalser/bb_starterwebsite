@@ -50,6 +50,7 @@ class ShowCase extends React.Component {
 							/>)
 						})
 					}
+					<div id = "aSpacerToScrollBetter"></div>
 				</div>
 
 				<style jsx >{`
@@ -64,8 +65,14 @@ class ShowCase extends React.Component {
 						overflow: scroll;
 						display: inline-block;
 						position: relative;
-						bottom: 1650px;
-						border:solid red;
+						bottom: 1630px;
+						box-sizing: padding-box;
+				    -moz-box-sizing: padding-box;
+				    -webkit-box-sizing: padding-box;
+					}
+					#aSpacerToScrollBetter {
+						width:100%;
+						height:200px;
 					}
 		    `}</style>
 

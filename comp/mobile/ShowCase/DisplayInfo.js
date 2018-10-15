@@ -10,6 +10,8 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 
 				<p>{SelectedInfo ? SelectedInfo.desc : ""}</p>
 
+				<a>{SelectedInfo ? SelectedInfo.urlLink : ""}</a>
+
 				<style jsx >{`
 
 					@keyframes show {
@@ -76,6 +78,12 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 						font-size: 4.5vw;
 						line-height:80px;
 						letter-spacing: 2px;
+					}
+
+					a {
+						font-size: 4.5vw;
+						padding: 5%;
+						color: red;
 					}
 
 					::-webkit-scrollbar {
