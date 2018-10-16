@@ -17,7 +17,6 @@ const Nav = () => {
 	      }
 
 				h2 {
-					min-width: 100%;
 					margin:3% 5%;;
 					font-size: 8vw;
 				}
