@@ -33,7 +33,7 @@ export default () => (
 	    input[type="datetime"], input[type="datetime-local"],
 	    input[type="date"], input[type="month"], input[type="time"],
 	    input[type="week"], input[type="number"], input[type="email"],
-	    input[type="url"]{ font-size: 20px; }
+	    input[type="url"]{ font-size: 50px; }
 
     `}</style>
   </div>

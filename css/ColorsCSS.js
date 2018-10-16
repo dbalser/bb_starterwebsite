@@ -51,6 +51,7 @@ export default () => (
 			}
 
 			input {
+				color: #CCCCCC;
 				background: #56515C;
 			}
 			input::placeholder {
