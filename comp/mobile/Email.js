@@ -32,7 +32,8 @@ export default () => {
 
 				.Email {
 					width: 50%;
-					height: 100px;
+					padding: 0px 0px 80px 0px;
+
 
 					-webkit-appearance: none; // this some how makes inset work!?!?!?!
 					appearance: none; // this some how makes inset work!?!?!?!
@@ -41,9 +42,15 @@ export default () => {
 					box-shadow: inset 10px 10px 80px -13px #39363D;
 				}
 
+				.Email::placeholder {
+					font-size: 5vw;
+					padding: 20px 0px 70px 0px;
+					border:solid red ;
+				}
+
 				.Text {
 					width: 100%;
-					height: 280px;
+					padding: 0px 0px 240px 0px;
 					margin-left: 3.5%;
 
 					-webkit-appearance: none; // this some how makes inset work!?!?!?!
@@ -53,17 +60,16 @@ export default () => {
 					box-shadow: inset 10px 10px 80px -13px #39363D;
 				}
 
+				.Text::placeholder {
+					padding: 40px 0px 210px 0px;
+					font-size: 5vw;
+					border:solid red;
+				}
+
 				input {
 					margin: 1%;
 					border: none;
 					border-radius: 8px;
-				}
-
-				input::placeholder {
-					position: relative;
-					bottom: 50px;
-					padding:10%;
-					font-size: 3vw;
 				}
 
 				.button {
