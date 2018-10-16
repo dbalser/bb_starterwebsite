@@ -4,11 +4,20 @@ import {findDOMNode} from 'react-dom';
 export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 
 		return (
-			<div id = "DisplayInfo" className = {AnimeName} onClick = {() => ChangeCurrentView(false)}>
+			<div id = "DisplayInfo" className = {AnimeName}>
 
 				<h1 className = {AnimeName + "H1"}>{SelectedInfo ? SelectedInfo.title.toUpperCase() : ""}</h1>
 
 				<p>{SelectedInfo ? SelectedInfo.desc : ""}</p>
+
+				<a href={SelectedInfo ? SelectedInfo.urlLink : ""} target="_blank"><p>CLICK HERE TO SEE!</p></a>
+
+				<img
+					id = "backbtn"
+					className = {AnimeName + "BackBtn"}
+					src = "/static/img/backbtn(white).png"
+					alt="back button"
+					onClick = {() => ChangeCurrentView(false)}/>
 
 				<style jsx >{`
 
@@ -27,6 +36,11 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 							100% {-webkit-box-shadow: 0px 25px 61px -6px rgba(57,54,61,1);
 							-moz-box-shadow: 0px 25px 61px -6px rgba(57,54,61,1);
 							box-shadow: 0px 25px 61px -6px rgba(57,54,61,1);}
+					}
+
+					@keyframes showBackBtn{
+					    0%{opacity:0;}
+							100% {opacity:1;}
 					}
 
 					#DisplayInfo {
@@ -62,6 +76,22 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 					  animation: showH1 .8s forwards;
 					}
 
+					.showBackBtn {
+						right: 100vw;
+						-webkit-animation: showBackBtn 15s forwards;
+					  -moz-animation: showBackBtn 15s forwards;
+					  -o-animation: showBackBtn 15s forwards;
+					  animation: showBackBtn 15s forwards;
+					}
+
+					#backbtn {
+						width: 20%;
+						display: block;
+						margin-top: 33%;
+						margin-left: 73%;
+						opacity: 0;
+					}
+
 					h1 {
 						font-size: 8vw;
 						padding: 4.5%;
@@ -70,12 +100,32 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 					}
 
 					p {
+						overflow-y: scroll;
 						padding: 3.5% 5%;
 						font-size: 4.5vw;
 						line-height:80px;
 						letter-spacing: 2px;
+						margin-bottom: 10%:
+						border: solid red;
+					}
+					::-webkit-scrollbar {
+					    width: 0px;  /* remove scrollbar space */
+					    background: transparent;  /* optional: just make scrollbar invisible */
 					}
 
+					a p {
+						font-size: 6vw;
+						margin-left: 10%;
+					}
+					a:link {
+				    background-color: transparent;
+				    text-decoration: none;
+					}
+
+					a:visited {
+				    background-color: transparent;
+				    text-decoration: none;
+					}
 
 
 				`}</style>

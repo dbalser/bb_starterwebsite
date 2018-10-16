@@ -4,11 +4,23 @@ import {findDOMNode} from 'react-dom';
 export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 
 		return (
-			<div id = "DisplayInfo" className = {AnimeName} onClick = {() => ChangeCurrentView(false)}>
+			<div id = "DisplayInfo" className = {AnimeName}>
 
-				<h1 className = {AnimeName + "H1"}>{SelectedInfo ? SelectedInfo.title.toUpperCase() : ""}</h1>
+				<div className = {AnimeName + "H1"}>
+
+					<h1 >{SelectedInfo ? SelectedInfo.title.toUpperCase() : ""}</h1>
+
+					<img
+						id = "backbtn"
+						className = {AnimeName + "BackBtn"}
+						src = "/static/img/backbtn(white).png"
+						alt="back button"
+						onClick = {() => ChangeCurrentView(false)}/>
+				</div>
 
 				<p>{SelectedInfo ? SelectedInfo.desc : ""}</p>
+
+				<a href={SelectedInfo ? SelectedInfo.urlLink : ""} target="_blank"><p>CLICK HERE TO SEE!</p></a>
 
 				<style jsx >{`
 
@@ -30,7 +42,6 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 					}
 
 					#DisplayInfo {
-
 						width:100%;
 						height: 80vh;
 						display: inline-block;
@@ -63,18 +74,47 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 					}
 
 					h1 {
+						display: inline-block;
 						font-size: 3.5vw;
 						padding: 4.5%;
 						background: #56515C;
 					}
 
 					p {
-						padding: 3.5% 5%;
+						padding: 1% 3%;
 						font-size: 1.6vw;
 						line-height:50px;
 						letter-spacing: 1.3px;
 					}
+					::-webkit-scrollbar {
+					    width: 0px;  /* remove scrollbar space */
+					    background: transparent;  /* optional: just make scrollbar invisible */
+					}
 
+					#backbtn {
+						width: 5%;
+						display: inline-block;
+						margin-left: 55%;
+						position: relative;
+						top: 15px;
+					}
+
+					a {
+						width: 30%;
+						margin-left: 5%;
+					}
+					a p {
+						font-size: 2vw;
+					}
+					a:link {
+				    background-color: transparent;
+				    text-decoration: none;
+					}
+
+					a:visited {
+				    background-color: transparent;
+				    text-decoration: none;
+					}
 
 
 				`}</style>

@@ -41,6 +41,9 @@ export default () => (
 				color: #CCCCCC;
 				background: #56515C;
 			}
+			#DisplayInfo a {
+				color: #CCCCCC;
+			}
 
 			#Email {
 				color: #CCCCCC;
