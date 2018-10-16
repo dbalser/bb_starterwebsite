@@ -127,7 +127,6 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 				    text-decoration: none;
 					}
 
-
 				`}</style>
 			</div>
 		)
