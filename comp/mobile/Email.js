@@ -32,7 +32,7 @@ export default () => {
 
 				.Email {
 					width: 50%;
-					padding: 0px 0px 80px 15agpx;
+					padding: 0px 0px 80px 15px;
 
 
 					-webkit-appearance: none; // this some how makes inset work!?!?!?!
@@ -44,12 +44,12 @@ export default () => {
 
 				.Email::placeholder {
 					font-size: 5vw;
-					padding: 20px 0px 70px 15agpx;
+					padding: 20px 0px 70px 15px;
 				}
 
 				.Text {
 					width: 100%;
-					padding: 0px 0px 240px 15agpx;
+					padding: 0px 0px 240px 15px;
 					margin-left: 3.5%;
 
 					-webkit-appearance: none; // this some how makes inset work!?!?!?!
@@ -60,7 +60,7 @@ export default () => {
 				}
 
 				.Text::placeholder {
-					padding: 40px 0px 210px 15agpx;
+					padding: 40px 0px 210px 15px;
 					font-size: 5vw;
 				}
 
