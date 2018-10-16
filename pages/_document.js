@@ -16,7 +16,7 @@ export default class MyDocument extends Document {
         <Head>
           <meta name="description" content="We live by NO Excuses"/>
 					<meta name="keywords" content="Online Coaching, Fitness, t-shirts"/>
-    			<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    			<meta name="viewport" content=" maximum-scale=1.0, user-scalable=no" />
 					<meta name="HandheldFriendly" content="true" />
 
 					<meta name="author" content="Brodie Balesr"/>
