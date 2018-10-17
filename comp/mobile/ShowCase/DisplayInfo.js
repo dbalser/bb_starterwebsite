@@ -99,10 +99,10 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 					}
 
 					.desc {
-						min-height: 800px;
+						max-height: 800px;
 						overflow-y: scroll;
 						padding: 10% 5%;
-						padding-bottom: 5%;
+						padding-bottom: 0%;
 						font-size: 4.5vw;
 						line-height:80px;
 						letter-spacing: 2px;
@@ -120,7 +120,7 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 
 					.link p{
 						font-size: 6vw;
-						padding:5% !important;
+						padding: 0% 5%;
 					}
 					.link:link{
 				    background-color: transparent;
