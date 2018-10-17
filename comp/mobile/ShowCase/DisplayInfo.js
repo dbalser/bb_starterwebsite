@@ -22,7 +22,7 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 				<style jsx >{`
 
 					@keyframes show {
-					    0% {right: 300vw;}
+					    0% {right: 100vw;}
 					    100% {right: 0.1vw;}
 					}
 					@keyframes hide{
