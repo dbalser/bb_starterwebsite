@@ -1,13 +1,13 @@
 import React from 'react'
 
-export default () => {
+export default ({Info}) => {
 
 	return (
 		<div id = 'Socials'>
 
-			<a className = "button" id = "insta" href = "">Instagram</a>
-			<a className = "button" id = "linkedin" href = "">LinkedIn</a>
-			<a className = "button" id = "github" href = "">Github</a>
+			<a className = "button" id = "insta" href = {Info.insta} target="_blank">Instagram</a>
+			<a className = "button" id = "linkedin" href = {Info.linkedIn} target="_blank">LinkedIn</a>
+			<a className = "button" id = "github" href = {Info.github} target="_blank">Github</a>
 
 
 			<style jsx >{`

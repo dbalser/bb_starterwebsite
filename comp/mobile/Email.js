@@ -1,5 +1,5 @@
 import React from 'react'
-export default () => {
+export default ({Info}) => {
 
 	return (
 		<div id = "Email">
@@ -8,7 +8,7 @@ export default () => {
 				<p id = "p1">LETS CHAT</p>
 			</div>
 
-			<form action="https://formspree.io/zachary.ezra@noxfit.com" method="POST">
+			<form action={`https://formspree.io/${Info}`} method="POST">
 				<input className = "Email" type="email" name="_replyto" placeholder="Your Email"/>
 				<input className = "Text" type="text" name="message" placeholder="Your Gracfull Words"/>
 				<input className="button" type="submit" value="Send"/>

@@ -1,7 +1,6 @@
 import React from 'react'
-const mistyIMG = '/static/img/mistymountain.jpg'
 
-export default () => {
+export default ({Info}) => {
 
 	return (
 		<div id = 'MainView'>
@@ -11,7 +10,7 @@ export default () => {
 			<div
 				id = "mainText" >
 
-				<p id = 'text'>Some nice text. This text will be a brief description of what this website will give you. Thank you for visiting!</p>
+				<p id = 'text'>{Info.txt}</p>
 
 			</div>
 
@@ -34,7 +33,7 @@ export default () => {
 	        width: 100%;
 					opacity: .7;
 			    height: 100%;
-					background-image: url(${mistyIMG});
+					background-image: url(${Info.pic});
 			    background-attachment: fixed;
 			    background-position: center;
 			    background-repeat: no-repeat;

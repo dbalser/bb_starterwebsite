@@ -1,3 +1,10 @@
+NavInfo: "Brodie Balser",
+
+MainViewInfo: {
+	pic: "/static/img/mistymountain.jpg",
+	txt: "Some nice text. This text will be a brief description of what this website will give you. Thank you for visiting!"
+},
+
 ShowCaseInfo:  [{
 		title: "NOX - ecomurse site",
 		pic: '/static/img/nox.png',
@@ -18,4 +25,17 @@ ShowCaseInfo:  [{
 		pic: '/static/img/fillthegaps.png',
 		desc: "This is a Generative Art project, made with p5 and Javascript. In this project, every time the page refreshes it is the programmes job to fill the screen horizontally with randomly sized rectangles. The biggest challenge here was getting the squares to not overlap or touch each other. To solve this I took all the coordinates on the x-axis and store them. Every time I want it to create a rectangle I would have it randomly define all of the dimensions for it and randomly decide where it wants to place it. Then I would pretend to place it using the coordinates from the x-axis I stored and check to see if there was room for it. If there was I would place it on the screen and remove the coordinates that it took up in the x-axis from the collection of coordinates I stored.",
 		urlLink: "http://fillthegaps.surge.sh/"
-	}]
+	}],
+
+	AboutUsInfo: {
+		pic: "/static/img/dog1.jpg",
+		txt: "It's a device Morty, that when you put it in your ear, you can enter people's dreams Morty. Its just like that movie that you keep crowing about. That just sounds like slavery with extra steps. Right, Crocubot. So, you're half cold unfeeling reptile, half also cold equally unfeeling machine? It's like the N word and the C word had a baby, and it was raised by all the bad words for Jews."
+	},
+
+	Email: "balserbrodie@gmail.com",
+
+	Socials: {
+		insta: "https://www.instagram.com/londel111/",
+		linkedIn: "https://www.linkedin.com/in/brodiebalser/",
+		github: "https://github.com/uumoss-bb/"
+	}

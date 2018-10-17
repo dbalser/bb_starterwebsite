@@ -28,9 +28,9 @@ class index extends React.Component {
 		this.state = {
 			NavInfo: "Brodie Balser",
 
-			MainViewIngo: {
+			MainViewInfo: {
 				pic: "/static/img/mistymountain.jpg",
-				text: "Some nice text. This text will be a brief description of what this website will give you. Thank you for visiting!"
+				txt: "Some nice text. This text will be a brief description of what this website will give you. Thank you for visiting!"
 			},
 
 			ShowCaseInfo:  [{
@@ -56,16 +56,16 @@ class index extends React.Component {
 				}],
 
 				AboutUsInfo: {
-					pic: "",
-					text: ""
+					pic: "/static/img/dog1.jpg",
+					txt: "It's a device Morty, that when you put it in your ear, you can enter people's dreams Morty. Its just like that movie that you keep crowing about. That just sounds like slavery with extra steps. Right, Crocubot. So, you're half cold unfeeling reptile, half also cold equally unfeeling machine? It's like the N word and the C word had a baby, and it was raised by all the bad words for Jews."
 				},
 
-				Email: ""
+				Email: "balserbrodie@gmail.com",
 
 				Socials: {
-					insta: "",
-					linkedIn: "",
-					github: ""
+					insta: "https://www.instagram.com/londel111/",
+					linkedIn: "https://www.linkedin.com/in/brodiebalser/",
+					github: "https://github.com/uumoss-bb/"
 				}
 		}
 	}

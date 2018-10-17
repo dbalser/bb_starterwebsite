@@ -1,12 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
 
-const Nav = () => {
+const Nav = ({Info}) => {
 
 	return (
 		<nav>
 
-			<h2>Full Stack Developer in action!</h2>
+			<h2>{Info}</h2>
 
 			<style jsx>{`
 
