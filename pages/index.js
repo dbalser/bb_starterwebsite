@@ -26,6 +26,13 @@ class index extends React.Component {
 	constructor(props) {
 		super(props)
 		this.state = {
+			NavInfo: "Brodie Balser",
+
+			MainViewIngo: {
+				pic: "/static/img/mistymountain.jpg",
+				text: "Some nice text. This text will be a brief description of what this website will give you. Thank you for visiting!"
+			},
+
 			ShowCaseInfo:  [{
 					title: "NOX - ecomurse site",
 					pic: '/static/img/nox.png',
@@ -46,7 +53,20 @@ class index extends React.Component {
 					pic: '/static/img/fillthegaps.png',
 					desc: "This is a Generative Art project, made with p5 and Javascript. In this project, every time the page refreshes it is the programmes job to fill the screen horizontally with randomly sized rectangles. The biggest challenge here was getting the squares to not overlap or touch each other. To solve this I took all the coordinates on the x-axis and store them. Every time I want it to create a rectangle I would have it randomly define all of the dimensions for it and randomly decide where it wants to place it. Then I would pretend to place it using the coordinates from the x-axis I stored and check to see if there was room for it. If there was I would place it on the screen and remove the coordinates that it took up in the x-axis from the collection of coordinates I stored.",
 					urlLink: "http://fillthegaps.surge.sh/"
-				}]
+				}],
+
+				AboutUsInfo: {
+					pic: "",
+					text: ""
+				},
+
+				Email: ""
+
+				Socials: {
+					insta: "",
+					linkedIn: "",
+					github: ""
+				}
 		}
 	}
 
@@ -61,21 +81,21 @@ class index extends React.Component {
 			<MediaQueryProvider >
 
 				<MediaQuery query="(min-device-width: 421px)">
-          <Nav/>
-				  <MainView/>
+          <Nav Info = {this.state.NavInfo}/>
+				  <MainView Info = {this.state.MainViewInfo}/>
 				  <ShowCase Info = {this.state.ShowCaseInfo}/>
-				  <AboutUs/>
-				  <Email/>
-				  <Socials/>
+				  <AboutUs Info = {this.state.AboutUsInfo}/>
+				  <Email Info = {this.state.Email}/>
+				  <Socials Info = {this.state.Socials}/>
         </MediaQuery>
 
 				<MediaQuery query="(max-device-width: 420px)">
-          <NavMobile/>
-					<MainViewMobile/>
+          <NavMobile Info = {this.state.NavInfo}/>
+					<MainViewMobile Info = {this.state.MainViewInfo}/>
 					<ShowCaseMobile Info = {this.state.ShowCaseInfo}/>
-					<AboutUsMobile/>
-					<EmailMobile/>
-					<SocialsMobile/>
+					<AboutUsMobile Info = {this.state.AboutUsInfo}/>
+					<EmailMobile Info = {this.state.Email}/>
+					<SocialsMobile Info = {this.state.Socials}/>
         </MediaQuery>
 
 				<MainCSS/>
