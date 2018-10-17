@@ -68,17 +68,17 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 
 					.showH1 {
 						right: 100vw;
-						-webkit-animation: showH1 .8s forwards;
-					  -moz-animation: showH1 .8s forwards;
-					  -o-animation: showH1 .8s forwards;
-					  animation: showH1 .8s forwards;
+						-webkit-animation: showH1 3s forwards;
+					  -moz-animation: showH1 3s forwards;
+					  -o-animation: showH1 3s forwards;
+					  animation: showH1 3s forwards;
 					}
 
 					.showBackBtn {
-						-webkit-animation: showBackBtn 15s forwards;
-					  -moz-animation: showBackBtn 15s forwards;
-					  -o-animation: showBackBtn 15s forwards;
-					  animation: showBackBtn 15s forwards;
+						-webkit-animation: showBackBtn 20s forwards;
+					  -moz-animation: showBackBtn 20s forwards;
+					  -o-animation: showBackBtn 20s forwards;
+					  animation: showBackBtn 20s forwards;
 					}
 
 					#backbtn {
@@ -93,7 +93,6 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 					h1 {
 						font-size: 8vw;
 						padding: 4.5%;
-						background: #56515C;
 						text-align: center;
 					}
 
