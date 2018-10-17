@@ -8,7 +8,7 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 
 				<div className = {AnimeName + "H1"}>
 
-					<h1 >{SelectedInfo ? SelectedInfo.title.toUpperCase() : ""}</h1>
+					<h1>{SelectedInfo ? SelectedInfo.title.toUpperCase() : ""}</h1>
 
 					<img
 						id = "backbtn"
@@ -16,11 +16,12 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 						src = "/static/img/backbtn(white).png"
 						alt="back button"
 						onClick = {() => ChangeCurrentView(false)}/>
+
 				</div>
 
-				<p>{SelectedInfo ? SelectedInfo.desc : ""}</p>
+				<p className = "desc">{SelectedInfo ? SelectedInfo.desc : ""}</p>
 
-				<a href={SelectedInfo ? SelectedInfo.urlLink : ""} target="_blank"><p>CLICK HERE TO SEE!</p></a>
+				<a className = "link" href={SelectedInfo ? SelectedInfo.urlLink : ""} target="_blank"><p>CLICK HERE TO SEE!</p></a>
 
 				<style jsx >{`
 
@@ -39,6 +40,11 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 							100% {-webkit-box-shadow: 0px 25px 61px -6px rgba(57,54,61,1);
 							-moz-box-shadow: 0px 25px 61px -6px rgba(57,54,61,1);
 							box-shadow: 0px 25px 61px -6px rgba(57,54,61,1);}
+					}
+
+					@keyframes showBackBtn{
+					    0%{opacity:0;}
+							100% {opacity:1;}
 					}
 
 					#DisplayInfo {
@@ -73,14 +79,23 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 					  animation: showH1 .8s forwards;
 					}
 
+					.showBackBtn {
+						-webkit-animation: showBackBtn 15s forwards;
+					  -moz-animation: showBackBtn 15s forwards;
+					  -o-animation: showBackBtn 15s forwards;
+					  animation: showBackBtn 15s forwards;
+					}
+
 					h1 {
 						display: inline-block;
 						font-size: 3.5vw;
-						padding: 4.5%;
+						padding: 2%;
 						background: #56515C;
 					}
 
-					p {
+					.desc {
+						max-height: 230px;
+						overflow-y: scroll;
 						padding: 1% 3%;
 						font-size: 1.6vw;
 						line-height:50px;
@@ -94,24 +109,24 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 					#backbtn {
 						width: 5%;
 						display: inline-block;
-						margin-left: 55%;
+						margin-left: 63%;
 						position: relative;
 						top: 15px;
 					}
 
-					a {
+					.link {
 						width: 30%;
-						margin-left: 5%;
 					}
-					a p {
+					.link p {
 						font-size: 2vw;
+						margin: 1% 3%;
 					}
-					a:link {
+					.link:link {
 				    background-color: transparent;
 				    text-decoration: none;
 					}
 
-					a:visited {
+					.link:visited {
 				    background-color: transparent;
 				    text-decoration: none;
 					}

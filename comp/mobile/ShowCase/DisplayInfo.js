@@ -8,9 +8,9 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 
 				<h1 className = {AnimeName + "H1"}>{SelectedInfo ? SelectedInfo.title.toUpperCase() : ""}</h1>
 
-				<p>{SelectedInfo ? SelectedInfo.desc : ""}</p>
+				<p className = "desc">{SelectedInfo ? SelectedInfo.desc : ""}</p>
 
-				<a href={SelectedInfo ? SelectedInfo.urlLink : ""} target="_blank"><p>CLICK HERE TO SEE!</p></a>
+				<a className = "link" href={SelectedInfo ? SelectedInfo.urlLink : ""} target="_blank"><p>CLICK HERE TO SEE!</p></a>
 
 				<img
 					id = "backbtn"
@@ -44,7 +44,6 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 					}
 
 					#DisplayInfo {
-
 						width:100%;
 						height: 1530px;
 						display: inline-block;
@@ -77,7 +76,6 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 					}
 
 					.showBackBtn {
-						right: 100vw;
 						-webkit-animation: showBackBtn 15s forwards;
 					  -moz-animation: showBackBtn 15s forwards;
 					  -o-animation: showBackBtn 15s forwards;
@@ -85,11 +83,12 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 					}
 
 					#backbtn {
+						position:absolute;
+						top: 1270px;
 						width: 20%;
 						display: block;
-						margin-top: 33%;
+						margin-top: 0%;
 						margin-left: 73%;
-						opacity: 0;
 					}
 
 					h1 {
@@ -99,14 +98,14 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 						text-align: center;
 					}
 
-					p {
+					.desc {
+						height: 800px;
 						overflow-y: scroll;
-						padding: 3.5% 5%;
+						padding: 10% 5%;
+						padding-bottom: 5%;
 						font-size: 4.5vw;
 						line-height:80px;
 						letter-spacing: 2px;
-						margin-bottom: 10%:
-						border: solid red;
 					}
 <<<<<<< HEAD
 
@@ -123,16 +122,16 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 					    background: transparent;  /* optional: just make scrollbar invisible */
 					}
 
-					a p {
+					.link p{
 						font-size: 6vw;
-						margin-left: 10%;
+						padding:5% !important;
 					}
-					a:link {
+					.link:link{
 				    background-color: transparent;
 				    text-decoration: none;
 					}
 
-					a:visited {
+					.link:visited {
 				    background-color: transparent;
 				    text-decoration: none;
 					}

@@ -21,7 +21,7 @@ export default () => {
 			<style jsx >{`
 
 				#MainView {
-					height: 1700px;
+					height: 1600px;
 					overflow: hidden;
 
 					//gradient
