@@ -107,6 +107,16 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 						line-height:80px;
 						letter-spacing: 2px;
 					}
+<<<<<<< HEAD
+
+					a {
+						font-size: 4.5vw;
+						padding: 5%;
+						color: red;
+					}
+
+=======
+>>>>>>> ef9cb577c79d8bbefeca55b3443b78faa422a8ed
 					::-webkit-scrollbar {
 					    width: 0px;  /* remove scrollbar space */
 					    background: transparent;  /* optional: just make scrollbar invisible */

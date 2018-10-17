@@ -25,8 +25,8 @@ export default ({DisplayItem, PiecesBottomNum, AnimeName, ChangeCurrentView}) =>
 					height: 1420px;
 					position: relative;
 					bottom: -130px;
-					left: 6.5vw;
-					margin: 1%;
+					left: 5vw;
+					margin: 3%;
 					margin-bottom: 8%;
 					border-radius: 25px;
 					-webkit-box-shadow: 7px 15px 61px -6px rgba(57,54,61,1);
