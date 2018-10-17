@@ -58,10 +58,10 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 
 					.show {
 						right: 100vw;
-						-webkit-animation: show 0.5s forwards;
-					  -moz-animation: show 0.5s forwards;
-					  -o-animation: show 0.5s forwards;
-					  animation: show 0.5s forwards;
+						-webkit-animation: show 2s forwards;
+					  -moz-animation: show 2s forwards;
+					  -o-animation: show 2s forwards;
+					  animation: show 2s forwards;
 					}
 
 					.hide {
@@ -73,17 +73,17 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 
 					.showH1 {
 						right: 100vw;
-						-webkit-animation: showH1 .8s forwards;
-					  -moz-animation: showH1 .8s forwards;
-					  -o-animation: showH1 .8s forwards;
-					  animation: showH1 .8s forwards;
+						-webkit-animation: showH1 2.8s forwards;
+					  -moz-animation: showH1 2.8s forwards;
+					  -o-animation: showH1 2.8s forwards;
+					  animation: showH1 2.8s forwards;
 					}
 
 					.showBackBtn {
-						-webkit-animation: showBackBtn 15s forwards;
-					  -moz-animation: showBackBtn 15s forwards;
-					  -o-animation: showBackBtn 15s forwards;
-					  animation: showBackBtn 15s forwards;
+						-webkit-animation: showBackBtn 20s forwards;
+					  -moz-animation: showBackBtn 20s forwards;
+					  -o-animation: showBackBtn 20s forwards;
+					  animation: showBackBtn 20s forwards;
 					}
 
 					h1 {

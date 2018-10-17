@@ -22,8 +22,8 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 				<style jsx >{`
 
 					@keyframes show {
-					    from {right: 100vw;}
-					    to {right: 0vw;}
+					    0% {right: 300vw;}
+					    100% {right: 0.1vw;}
 					}
 					@keyframes hide{
 					    0%{right: 0vw;}
@@ -53,11 +53,10 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 					}
 
 					.show {
-						right: 100vw;
-						-webkit-animation: show 0.5s forwards;
-					  -moz-animation: show 0.5s forwards;
-					  -o-animation: show 0.5s forwards;
-					  animation: show 0.5s forwards;
+						-webkit-animation: show 2s forwards;
+					  -moz-animation: show 2s forwards;
+					  -o-animation: show 2s forwards;
+					  animation: show 2s forwards;
 					}
 
 					.hide {
@@ -69,17 +68,17 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 
 					.showH1 {
 						right: 100vw;
-						-webkit-animation: showH1 .8s forwards;
-					  -moz-animation: showH1 .8s forwards;
-					  -o-animation: showH1 .8s forwards;
-					  animation: showH1 .8s forwards;
+						-webkit-animation: showH1 3s forwards;
+					  -moz-animation: showH1 3s forwards;
+					  -o-animation: showH1 3s forwards;
+					  animation: showH1 3s forwards;
 					}
 
 					.showBackBtn {
-						-webkit-animation: showBackBtn 15s forwards;
-					  -moz-animation: showBackBtn 15s forwards;
-					  -o-animation: showBackBtn 15s forwards;
-					  animation: showBackBtn 15s forwards;
+						-webkit-animation: showBackBtn 20s forwards;
+					  -moz-animation: showBackBtn 20s forwards;
+					  -o-animation: showBackBtn 20s forwards;
+					  animation: showBackBtn 20s forwards;
 					}
 
 					#backbtn {
@@ -94,15 +93,14 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 					h1 {
 						font-size: 8vw;
 						padding: 4.5%;
-						background: #56515C;
 						text-align: center;
 					}
 
 					.desc {
-						height: 800px;
+						max-height: 800px;
 						overflow-y: scroll;
 						padding: 10% 5%;
-						padding-bottom: 5%;
+						padding-bottom: 0%;
 						font-size: 4.5vw;
 						line-height:80px;
 						letter-spacing: 2px;
@@ -121,7 +119,7 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 
 					.link p{
 						font-size: 6vw;
-						padding:5% !important;
+						padding: 0% 5%;
 					}
 					.link:link{
 				    background-color: transparent;
