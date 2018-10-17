@@ -1,18 +1,17 @@
 import React from 'react'
-const UsImg = '/static/img/dog1.jpg'
 
-export default () => {
+export default ({Info}) => {
 
 	return (
 		<div id = 'AboutUs'>
 
 			<img
 				id = "UsImg"
-				src = {UsImg}
+				src = {Info.pic}
 				alt="about us img"/>
 
 
-			<p>It's a device Morty, that when you put it in your ear, you can enter people's dreams Morty. Its just like that movie that you keep crowing about. That just sounds like slavery with extra steps. Right, Crocubot. So, you're half cold unfeeling reptile, half also cold equally unfeeling machine? It's like the N word and the C word had a baby, and it was raised by all the bad words for Jews.</p>
+			<p>{Info.txt}</p>
 
 
 			<style jsx >{`

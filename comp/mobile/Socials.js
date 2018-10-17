@@ -1,13 +1,13 @@
 import React from 'react'
 
-export default () => {
+export default ({Info}) => {
 
 	return (
 		<div id = 'Socials'>
 
-			<a className = "btn" id = "insta" href = "">Instagram</a>
-			<a className = "btn" id = "linkedin" href = "">LinkedIn</a>
-			<a className = "btn" id = "github" href = "">Github</a>
+			<a className = "btn" id = "insta" href = {Info.insta} target="_blank">Insta</a>
+			<a className = "btn" id = "linkedin" href = {Info.linkedIn} target="_blank">LinkedIn</a>
+			<a className = "btn" id = "github" href = {Info.github} target="_blank">Github</a>
 
 
 			<style jsx >{`
@@ -18,7 +18,7 @@ export default () => {
 					margin: 0;
 				}
 				#insta {
-					margin-left: 5%;
+					margin-left: 12%;
 				}
 				.btn {
 					border-radius: 10px;
