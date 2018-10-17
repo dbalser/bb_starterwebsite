@@ -109,9 +109,9 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 					#backbtn {
 						width: 5%;
 						display: inline-block;
-						margin-left: 63%;
-						position: relative;
-						top: 15px;
+						position: absolute;
+						top: 20px;
+						left: 93%;
 					}
 
 					.link {
