@@ -22,8 +22,8 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 				<style jsx >{`
 
 					@keyframes show {
-					    from {right: 100vw;}
-					    to {right: 0vw;}
+					    0% {right: 300vw;}
+					    100% {right: 0.1vw;}
 					}
 					@keyframes hide{
 					    0%{right: 0vw;}
@@ -53,11 +53,10 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 					}
 
 					.show {
-						right: 100vw;
-						-webkit-animation: show 0.5s forwards;
-					  -moz-animation: show 0.5s forwards;
-					  -o-animation: show 0.5s forwards;
-					  animation: show 0.5s forwards;
+						-webkit-animation: show 2s forwards;
+					  -moz-animation: show 2s forwards;
+					  -o-animation: show 2s forwards;
+					  animation: show 2s forwards;
 					}
 
 					.hide {
