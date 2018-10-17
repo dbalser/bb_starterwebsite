@@ -42,6 +42,11 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 							box-shadow: 0px 25px 61px -6px rgba(57,54,61,1);}
 					}
 
+					@keyframes showBackBtn{
+					    0%{opacity:0;}
+							100% {opacity:1;}
+					}
+
 					#DisplayInfo {
 						width:100%;
 						height: 80vh;
@@ -72,6 +77,13 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 					  -moz-animation: showH1 .8s forwards;
 					  -o-animation: showH1 .8s forwards;
 					  animation: showH1 .8s forwards;
+					}
+
+					.showBackBtn {
+						-webkit-animation: showBackBtn 15s forwards;
+					  -moz-animation: showBackBtn 15s forwards;
+					  -o-animation: showBackBtn 15s forwards;
+					  animation: showBackBtn 15s forwards;
 					}
 
 					h1 {

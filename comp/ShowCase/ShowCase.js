@@ -37,7 +37,7 @@ class ShowCase extends React.Component {
 
 		let max = 0
 		let PiecesBottomNum = this.state.PiecesBottomNum
-		let movesUp = 90
+		let movesUp = 90.8
 
 		let NumOfInfo = this.props.Info.length
 		// this acts like .ceiling its the remander is not 0
@@ -124,7 +124,7 @@ class ShowCase extends React.Component {
 						height: 88vh;
 						display: inline-block;
 						position: relative;
-						bottom: 110vh;
+						bottom: 110.8vh;
 						left: 8%;
 					}
 					#UpArrow {
