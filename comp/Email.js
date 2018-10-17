@@ -18,7 +18,7 @@ export default () => {
 			<style jsx >{`
 
 				#Email {
-					height: 35vh;
+					height:36vh;
 				}
 
 				#IntroText {
@@ -70,11 +70,12 @@ export default () => {
 					margin: 1%;
 					border: none;
 					border-radius: 8px;
+					font-size: 1.6vw !important;
 				}
 
 				input::placeholder {
 					padding: 5%;
-					font-size: 1.2vw;
+					font-size: 1.6vw;
 				}
 
 				.button {
