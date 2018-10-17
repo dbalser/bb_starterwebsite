@@ -111,6 +111,7 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 						padding: 5%;
 						color: red;
 					}
+
 					::-webkit-scrollbar {
 					    width: 0px;  /* remove scrollbar space */
 					    background: transparent;  /* optional: just make scrollbar invisible */
