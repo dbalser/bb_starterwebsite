@@ -48,7 +48,7 @@ export default () => (
 			#Email {
 				color: #CCCCCC;
 				background: #56515C;
-			}
+			} 
 
 			input {
 				color: #CCCCCC;

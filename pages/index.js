@@ -26,7 +26,7 @@ class index extends React.Component {
 	constructor(props) {
 		super(props)
 		this.state = {
-			NavInfo: "Hi Sam :)",
+			NavInfo: "Brodie Balser",
 
 			MainViewInfo: {
 				pic: "/static/img/mistymountain.jpg",
@@ -56,8 +56,8 @@ class index extends React.Component {
 				}],
 
 				AboutUsInfo: {
-					pic: "/static/img/dog1.jpg",
-					txt: "I am a full stack developer, with a particularly interesting front-end development. I am a strong visual person, I enjoy picking out all the details and being able to improve them by coding. I have done projects with Javascript, HTML, CSS,  React, Angular. I have also built backends with Node.js, Express, and Ruby on Rails."
+					pic: "/static/img/brodies_pic.jpg",
+					txt: "I am a full stack developer, with a particularly interesting front-end development. I am a strong visual person, I enjoy combining my design background and engineering skills to create unique experiences. I have done projects with Javascript, HTML, CSS,  React, Angular. I have also built backends with Node.js, Express, and Ruby on Rails."
 				},
 
 				Email: "balserbrodie@gmail.com",

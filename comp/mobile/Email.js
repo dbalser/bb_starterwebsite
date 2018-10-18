@@ -10,7 +10,7 @@ export default ({Info}) => {
 
 			<form action={`https://formspree.io/${Info}`} method="POST">
 				<input className = "Email" type="email" name="_replyto" placeholder="Your Email"/>
-				<input className = "Text" type="text" name="message" placeholder="Your Gracfull Words"/>
+				<textarea className = "Text" name="message"  placeholder="Your Gracfull Words"></textarea>
 				<input className="button" type="submit" value="Send"/>
 			</form>
 
@@ -50,7 +50,12 @@ export default ({Info}) => {
 				.Text {
 					width: 100%;
 					padding: 0px 0px 240px 15px;
+					margin-top: 2%;
 					margin-left: 3.5%;
+					color: #CCCCCC;
+					background: #56515C;
+					border-radius: 8px;
+					border: none;
 
 					-webkit-appearance: none; // this some how makes inset work!?!?!?!
 					appearance: none; // this some how makes inset work!?!?!?!
@@ -61,6 +66,7 @@ export default ({Info}) => {
 
 				.Text::placeholder {
 					padding: 40px 0px 210px 15px;
+					color: #CCCCCC;
 					font-size: 5vw;
 				}
 
@@ -81,6 +87,12 @@ export default ({Info}) => {
 					-webkit-appearance: none;
 					appearance: none;
 				}
+
+				select, textarea, input[type="text"], input[type="password"],
+		    input[type="datetime"], input[type="datetime-local"],
+		    input[type="date"], input[type="month"], input[type="time"],
+		    input[type="week"], input[type="number"], input[type="email"],
+		    input[type="url"]{ font-size: 50px; }
 
 	    `}</style>
 		</div>

@@ -23,9 +23,9 @@ export default ({Info}) => {
 				}
 
 				#UsImg {
-					width: 30%;
+					width: 15%;
 					border-radius: 40px;
-					margin: 2% 5%;
+					margin: 2% 10%;
 				}
 
 				p {
