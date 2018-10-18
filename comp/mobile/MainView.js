@@ -43,11 +43,11 @@ export default ({Info}) => {
 
 				#mainText {
 					position: relative;
-					bottom: 1200px;
-					width: 60%;
+					bottom: 1100px;
+					width: 70%;
 					text-align: center;
 					font-size: 7vw;
-					margin-left: 20%;
+					margin-left: 15%;
 				}
 
 	    `}</style>
