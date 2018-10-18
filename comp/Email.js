@@ -11,7 +11,7 @@ export default ({Info}) => {
 
 			<form action={`https://formspree.io/${Info}`} method="POST">
 				<input className = "Email" type="email" name="_replyto" placeholder="Your Email"/>
-				<input className = "Text" type="text" name="message" placeholder="Your Gracfull Words"/>
+				<textarea className = "Text" name="message" cols="60" rows="10" placeholder="Your Gracfull Words"></textarea>
 				<input className="button" type="submit" value="Send"/>
 			</form>
 
@@ -59,11 +59,22 @@ export default ({Info}) => {
 				.Text {
 					width: 100%;
 					height: 15vh;
+					color: #CCCCCC;
+					background: #56515C ;
+					border-radius: 8px;
+					border-color: transparent;
+					font-size: 1.6vw;
 					margin-left: 3.5%;
-
 					-webkit-box-shadow: inset 10px 10px 80px -13px #39363D;
 					-moz-box-shadow: inset 10px 10px 80px -13px #39363D;
 					box-shadow: inset 10px 10px 80px -13px #39363D;
+				}
+
+				.Text::placeholder {
+					color: #CCCCCC;
+					width:100%;
+					padding: 5%;
+					font-size: 1.6vw;
 				}
 
 				input {
@@ -74,6 +85,7 @@ export default ({Info}) => {
 				}
 
 				input::placeholder {
+					width:100%;
 					padding: 5%;
 					font-size: 1.6vw;
 				}
@@ -84,6 +96,11 @@ export default ({Info}) => {
 					position: relative;
 					top: 0vh;
 					left: 60vw;
+				}
+
+				::-webkit-scrollbar {
+						width: 0px;  /* remove scrollbar space */
+						background: transparent;  /* optional: just make scrollbar invisible */
 				}
 
 	    `}</style>
