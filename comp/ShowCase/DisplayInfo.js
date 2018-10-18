@@ -25,15 +25,6 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 
 				<style jsx >{`
 
-					@keyframes show {
-					    from {right: 100vw;}
-					    to {right: 0vw;}
-					}
-					@keyframes hide{
-					    0%{right: 0vw;}
-							100% {right: 100vw;}
-					}
-
 					@keyframes showH1{
 					    0%{box-shadow: none}
 							50%{box-shadow: none}
@@ -52,31 +43,31 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 						height: 80vh;
 						display: inline-block;
 						position: relative;
-						right: 100vw;
 						z-index: 5;
+
+						//this way makes it easier for the dom to animate and run at 60 fillthegaps
+						// source: //https://medium.com/outsystems-experts/how-to-achieve-60-fps-animations-with-css3-db7b98610108
+						-webkit-transform: translateX(-100%);
+						transform: translateX(-100%);
+						transition: transform .5s linear;
+						will-change: transform;
 					}
 
 					.show {
-						right: 100vw;
-						-webkit-animation: show 2s forwards;
-					  -moz-animation: show 2s forwards;
-					  -o-animation: show 2s forwards;
-					  animation: show 2s forwards;
+						-webkit-transform: none !important;
+						transform: none !important;
 					}
 
 					.hide {
-						-webkit-animation: hide 0.5s forwards;
-					  -moz-animation: hide 0.5s forwards;
-					  -o-animation: hide 0.5s forwards;
-					  animation: hide 0.5s forwards;
+						-webkit-transform: translateX(-100%);
+						transform: translateX(-100%);
 					}
-
 					.showH1 {
 						right: 100vw;
-						-webkit-animation: showH1 2.8s forwards;
-					  -moz-animation: showH1 2.8s forwards;
-					  -o-animation: showH1 2.8s forwards;
-					  animation: showH1 2.8s forwards;
+						-webkit-animation: showH1 1s forwards;
+					  -moz-animation: showH1 1s forwards;
+					  -o-animation: showH1 1s forwards;
+					  animation: showH1 1s forwards;
 					}
 
 					.showBackBtn {

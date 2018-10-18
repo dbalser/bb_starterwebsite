@@ -2,7 +2,7 @@ NavInfo: "Brodie Balser",
 
 MainViewInfo: {
 	pic: "/static/img/mistymountain.jpg",
-	txt: "Some nice text. This text will be a brief description of what this website will give you. Thank you for visiting!"
+	txt: "WORKING TOWARDS MAKING THE WORLD A BETTER PLACE BY CREATING TOOLS THAT SIMPLIFY."
 },
 
 ShowCaseInfo:  [{
@@ -29,7 +29,7 @@ ShowCaseInfo:  [{
 
 	AboutUsInfo: {
 		pic: "/static/img/dog1.jpg",
-		txt: "It's a device Morty, that when you put it in your ear, you can enter people's dreams Morty. Its just like that movie that you keep crowing about. That just sounds like slavery with extra steps. Right, Crocubot. So, you're half cold unfeeling reptile, half also cold equally unfeeling machine? It's like the N word and the C word had a baby, and it was raised by all the bad words for Jews."
+		txt: "I am a full stack developer, with a particularly interesting front-end development. I am a strong visual person, I enjoy picking out all the details and being able to improve them by coding. I have done projects with Javascript, HTML, CSS,  React, Angular. I have also built backends with Node.js, Express, and Ruby on Rails."
 	},
 
 	Email: "balserbrodie@gmail.com",
