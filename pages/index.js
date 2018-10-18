@@ -26,7 +26,7 @@ class index extends React.Component {
 	constructor(props) {
 		super(props)
 		this.state = {
-			NavInfo: "Brodie Balser",
+			NavInfo: "Hi Sam :)",
 
 			MainViewInfo: {
 				pic: "/static/img/mistymountain.jpg",
