@@ -14,11 +14,13 @@ const Nav = ({Info}) => {
 					width: 98%;
 					height: 10vh;
 					padding:1%;
+
 	      }
 
 				h2 {
-					margin:3% 5%;;
-					font-size: 8vw;
+					text-align: center;
+					margin:1%;
+					font-size: 13vw;
 				}
 
     	`}</style>
