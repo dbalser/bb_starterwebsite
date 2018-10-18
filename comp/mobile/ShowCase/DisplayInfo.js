@@ -45,8 +45,7 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 						// source: //https://medium.com/outsystems-experts/how-to-achieve-60-fps-animations-with-css3-db7b98610108
 						-webkit-transform: translateX(-100%);
 						transform: translateX(-100%);
-						transition: transform .5s linear;
-						will-change: transform;
+						transition: transform .8s ease;
 					}
 
 					.show {
@@ -61,10 +60,10 @@ export default ({SelectedInfo, AnimeName, ChangeCurrentView}) => {
 
 					.showH1 {
 						right: 100vw;
-						-webkit-animation: showH1 1s forwards;
-					  -moz-animation: showH1 1s forwards;
-					  -o-animation: showH1 1s forwards;
-					  animation: showH1 1s forwards;
+						-webkit-animation: showH1 1.2s forwards;
+					  -moz-animation: showH1 1.2s forwards;
+					  -o-animation: showH1 1.2s forwards;
+					  animation: showH1 1.2s forwards;
 					}
 
 					.showBackBtn {
