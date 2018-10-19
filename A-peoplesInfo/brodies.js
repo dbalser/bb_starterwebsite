@@ -6,7 +6,7 @@ MainViewInfo: {
 },
 
 ShowCaseInfo:  [{
-		title: "NOX - ecomurse site",
+		title: "NOX - e-commerce site",
 		pic: '/static/img/nox.png',
 		desc: "This site was built from scratch using React.js, Express, and Stripe. This client needed to sell, track, and draw people to their business. The website's content is completely flexible. With its custom content management system, you can alter most of the website from the admin page.",
 		urlLink: "https://noxfit.com/"
