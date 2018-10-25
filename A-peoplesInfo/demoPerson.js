@@ -6,7 +6,7 @@ ShowCaseInfo:  [{
 	},{
 		title: "Coin Stacks",
 		pic: '/static/img/dog2.jpeg',
-		desc: "C Stacks is a money management app that I use every day. It is a simple and hands-on solution that is based on the ideas from the book 'The Richest Man in Babylon'. You are able to make 'Pures' that store money for a specific purpose like pay for rent. You do this till all of your money is separated. Then you simply update the amount in a purse as money comes and goes. I built this using React.js and Express with all custom CSS.",
+		desc: "Coin Stacks is a money management app that I use every day. It is a simple and hands-on solution that is based on the ideas from the book 'The Richest Man in Babylon'. You are able to make 'Pures' that store money for a specific purpose like pay for rent. You do this till all of your money is separated. Then you simply update the amount in a purse as money comes and goes. I built this using React.js and Express with all custom CSS.",
 		urlLink: "http://coinstacks.surge.sh/"
 	},{
 		title: "Dotted Lines",
